@@ -53,14 +53,13 @@ namespace TuLuzNet
             this.btnPedidoEntreFechas = new System.Windows.Forms.Button();
             this.btnPedidosXEmpleado = new System.Windows.Forms.Button();
             this.btnPedidosXCliente = new System.Windows.Forms.Button();
-            this.btnReportes = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Location = new System.Drawing.Point(12, 98);
+            this.btnProveedores.Location = new System.Drawing.Point(10, 85);
             this.btnProveedores.Name = "btnProveedores";
-            this.btnProveedores.Size = new System.Drawing.Size(153, 46);
+            this.btnProveedores.Size = new System.Drawing.Size(131, 40);
             this.btnProveedores.TabIndex = 0;
             this.btnProveedores.Text = "Proveedores";
             this.btnProveedores.UseVisualStyleBackColor = true;
@@ -68,9 +67,9 @@ namespace TuLuzNet
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(171, 98);
+            this.btnEmpleados.Location = new System.Drawing.Point(147, 85);
             this.btnEmpleados.Name = "btnEmpleados";
-            this.btnEmpleados.Size = new System.Drawing.Size(153, 46);
+            this.btnEmpleados.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleados.TabIndex = 1;
             this.btnEmpleados.Text = "Empleados";
             this.btnEmpleados.UseVisualStyleBackColor = true;
@@ -78,9 +77,9 @@ namespace TuLuzNet
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(12, 150);
+            this.btnClientes.Location = new System.Drawing.Point(10, 130);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(153, 46);
+            this.btnClientes.Size = new System.Drawing.Size(131, 40);
             this.btnClientes.TabIndex = 2;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.UseVisualStyleBackColor = true;
@@ -88,9 +87,9 @@ namespace TuLuzNet
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(171, 150);
+            this.btnProductos.Location = new System.Drawing.Point(147, 130);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(153, 46);
+            this.btnProductos.Size = new System.Drawing.Size(131, 40);
             this.btnProductos.TabIndex = 3;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = true;
@@ -100,10 +99,10 @@ namespace TuLuzNet
             // 
             this.lblTuLuz.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblTuLuz.Font = new System.Drawing.Font("Segoe UI", 24F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
-                | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
+                | System.Drawing.FontStyle.Underline))));
             this.lblTuLuz.Location = new System.Drawing.Point(0, 0);
             this.lblTuLuz.Name = "lblTuLuz";
-            this.lblTuLuz.Size = new System.Drawing.Size(1105, 45);
+            this.lblTuLuz.Size = new System.Drawing.Size(947, 39);
             this.lblTuLuz.TabIndex = 8;
             this.lblTuLuz.Text = "TuLuz";
             this.lblTuLuz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -112,18 +111,18 @@ namespace TuLuzNet
             // lblABM
             // 
             this.lblABM.AutoSize = true;
-            this.lblABM.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.lblABM.Location = new System.Drawing.Point(12, 63);
+            this.lblABM.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.lblABM.Location = new System.Drawing.Point(10, 55);
             this.lblABM.Name = "lblABM";
-            this.lblABM.Size = new System.Drawing.Size(77, 32);
+            this.lblABM.Size = new System.Drawing.Size(78, 32);
             this.lblABM.TabIndex = 9;
             this.lblABM.Text = "ABMs";
             // 
             // btnProvincia
             // 
-            this.btnProvincia.Location = new System.Drawing.Point(12, 254);
+            this.btnProvincia.Location = new System.Drawing.Point(10, 220);
             this.btnProvincia.Name = "btnProvincia";
-            this.btnProvincia.Size = new System.Drawing.Size(153, 46);
+            this.btnProvincia.Size = new System.Drawing.Size(131, 40);
             this.btnProvincia.TabIndex = 10;
             this.btnProvincia.Text = "Provincia";
             this.btnProvincia.UseVisualStyleBackColor = true;
@@ -131,9 +130,9 @@ namespace TuLuzNet
             // 
             // btnTipoDocumento
             // 
-            this.btnTipoDocumento.Location = new System.Drawing.Point(171, 254);
+            this.btnTipoDocumento.Location = new System.Drawing.Point(147, 220);
             this.btnTipoDocumento.Name = "btnTipoDocumento";
-            this.btnTipoDocumento.Size = new System.Drawing.Size(153, 46);
+            this.btnTipoDocumento.Size = new System.Drawing.Size(131, 40);
             this.btnTipoDocumento.TabIndex = 11;
             this.btnTipoDocumento.Text = "TipoDocumento";
             this.btnTipoDocumento.UseVisualStyleBackColor = true;
@@ -141,9 +140,9 @@ namespace TuLuzNet
             // 
             // btnLocalidad
             // 
-            this.btnLocalidad.Location = new System.Drawing.Point(171, 202);
+            this.btnLocalidad.Location = new System.Drawing.Point(147, 175);
             this.btnLocalidad.Name = "btnLocalidad";
-            this.btnLocalidad.Size = new System.Drawing.Size(153, 46);
+            this.btnLocalidad.Size = new System.Drawing.Size(131, 40);
             this.btnLocalidad.TabIndex = 12;
             this.btnLocalidad.Text = "Localidad";
             this.btnLocalidad.UseVisualStyleBackColor = true;
@@ -151,9 +150,9 @@ namespace TuLuzNet
             // 
             // btnBarrio
             // 
-            this.btnBarrio.Location = new System.Drawing.Point(12, 202);
+            this.btnBarrio.Location = new System.Drawing.Point(10, 175);
             this.btnBarrio.Name = "btnBarrio";
-            this.btnBarrio.Size = new System.Drawing.Size(153, 46);
+            this.btnBarrio.Size = new System.Drawing.Size(131, 40);
             this.btnBarrio.TabIndex = 13;
             this.btnBarrio.Text = "Barrio";
             this.btnBarrio.UseVisualStyleBackColor = true;
@@ -161,9 +160,9 @@ namespace TuLuzNet
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(1014, 346);
+            this.btnSalir.Location = new System.Drawing.Point(869, 300);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(82, 29);
+            this.btnSalir.Size = new System.Drawing.Size(70, 25);
             this.btnSalir.TabIndex = 14;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -172,18 +171,18 @@ namespace TuLuzNet
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(401, 63);
+            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label1.Location = new System.Drawing.Point(344, 55);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(182, 32);
+            this.label1.Size = new System.Drawing.Size(183, 32);
             this.label1.TabIndex = 15;
             this.label1.Text = "Procedimientos";
             // 
             // btnCargarPedido
             // 
-            this.btnCargarPedido.Location = new System.Drawing.Point(401, 98);
+            this.btnCargarPedido.Location = new System.Drawing.Point(344, 85);
             this.btnCargarPedido.Name = "btnCargarPedido";
-            this.btnCargarPedido.Size = new System.Drawing.Size(153, 46);
+            this.btnCargarPedido.Size = new System.Drawing.Size(131, 40);
             this.btnCargarPedido.TabIndex = 16;
             this.btnCargarPedido.Text = "Cargar Pedido";
             this.btnCargarPedido.UseVisualStyleBackColor = true;
@@ -191,9 +190,9 @@ namespace TuLuzNet
             // 
             // btnCargarCotizacion
             // 
-            this.btnCargarCotizacion.Location = new System.Drawing.Point(560, 98);
+            this.btnCargarCotizacion.Location = new System.Drawing.Point(480, 85);
             this.btnCargarCotizacion.Name = "btnCargarCotizacion";
-            this.btnCargarCotizacion.Size = new System.Drawing.Size(153, 46);
+            this.btnCargarCotizacion.Size = new System.Drawing.Size(131, 40);
             this.btnCargarCotizacion.TabIndex = 17;
             this.btnCargarCotizacion.Text = "Cargar Cotización";
             this.btnCargarCotizacion.UseVisualStyleBackColor = true;
@@ -201,9 +200,9 @@ namespace TuLuzNet
             // 
             // btnCargarFactura
             // 
-            this.btnCargarFactura.Location = new System.Drawing.Point(401, 150);
+            this.btnCargarFactura.Location = new System.Drawing.Point(344, 130);
             this.btnCargarFactura.Name = "btnCargarFactura";
-            this.btnCargarFactura.Size = new System.Drawing.Size(153, 46);
+            this.btnCargarFactura.Size = new System.Drawing.Size(131, 40);
             this.btnCargarFactura.TabIndex = 18;
             this.btnCargarFactura.Text = "Cargar Factura";
             this.btnCargarFactura.UseVisualStyleBackColor = true;
@@ -212,109 +211,90 @@ namespace TuLuzNet
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(784, 63);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label2.Location = new System.Drawing.Point(672, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(111, 32);
+            this.label2.Size = new System.Drawing.Size(112, 32);
             this.label2.TabIndex = 19;
             this.label2.Text = "Reportes";
             // 
             // btnReportesXActivos
             // 
-            this.btnReportesXActivos.Location = new System.Drawing.Point(784, 98);
+            this.btnReportesXActivos.Location = new System.Drawing.Point(672, 85);
             this.btnReportesXActivos.Name = "btnReportesXActivos";
-            this.btnReportesXActivos.Size = new System.Drawing.Size(153, 46);
+            this.btnReportesXActivos.Size = new System.Drawing.Size(131, 40);
             this.btnReportesXActivos.TabIndex = 20;
             this.btnReportesXActivos.Text = "Reportes Por Activos";
             this.btnReportesXActivos.UseVisualStyleBackColor = true;
-            //this.btnReportesXActivos.Click += new System.EventHandler(this.btnReportesXActivos_Click);
             // 
             // btnCotizacionesXEmpleado
             // 
-            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(943, 98);
+            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(808, 85);
             this.btnCotizacionesXEmpleado.Name = "btnCotizacionesXEmpleado";
-            this.btnCotizacionesXEmpleado.Size = new System.Drawing.Size(153, 46);
+            this.btnCotizacionesXEmpleado.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXEmpleado.TabIndex = 21;
             this.btnCotizacionesXEmpleado.Text = "Cotizaciones por Empleado";
             this.btnCotizacionesXEmpleado.UseVisualStyleBackColor = true;
-            //this.btnCotizacionesXEmpleado.Click += new System.EventHandler(this.btnCotizacionesXEmpleado_Click);
             // 
             // btnEmpleadosXActivo
             // 
-            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(943, 150);
+            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(808, 130);
             this.btnEmpleadosXActivo.Name = "btnEmpleadosXActivo";
-            this.btnEmpleadosXActivo.Size = new System.Drawing.Size(153, 46);
+            this.btnEmpleadosXActivo.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleadosXActivo.TabIndex = 23;
             this.btnEmpleadosXActivo.Text = "Empleados por Activo";
             this.btnEmpleadosXActivo.UseVisualStyleBackColor = true;
-            //this.btnEmpleadosXActivo.Click += new System.EventHandler(this.btnEmpleadosXActivo_Click);
             // 
             // btnCotizacionesXPrecio
             // 
-            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(784, 150);
+            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(672, 130);
             this.btnCotizacionesXPrecio.Name = "btnCotizacionesXPrecio";
-            this.btnCotizacionesXPrecio.Size = new System.Drawing.Size(153, 46);
+            this.btnCotizacionesXPrecio.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXPrecio.TabIndex = 22;
             this.btnCotizacionesXPrecio.Text = "Cotizaciones por Precio";
             this.btnCotizacionesXPrecio.UseVisualStyleBackColor = true;
-            //this.btnCotizacionesXPrecio.Click += new System.EventHandler(this.btnCotizacionesXPrecio_Click);
             // 
             // btnPedidosEntrePrecios
             // 
-            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(943, 202);
+            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(808, 175);
             this.btnPedidosEntrePrecios.Name = "btnPedidosEntrePrecios";
-            this.btnPedidosEntrePrecios.Size = new System.Drawing.Size(153, 46);
+            this.btnPedidosEntrePrecios.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosEntrePrecios.TabIndex = 25;
             this.btnPedidosEntrePrecios.Text = "Pedidos entre Precios";
             this.btnPedidosEntrePrecios.UseVisualStyleBackColor = true;
-            //this.btnPedidosEntrePrecios.Click += new System.EventHandler(this.btnPedidosEntrePrecios_Click);
             // 
             // btnPedidoEntreFechas
             // 
-            this.btnPedidoEntreFechas.Location = new System.Drawing.Point(784, 202);
+            this.btnPedidoEntreFechas.Location = new System.Drawing.Point(672, 175);
             this.btnPedidoEntreFechas.Name = "btnPedidoEntreFechas";
-            this.btnPedidoEntreFechas.Size = new System.Drawing.Size(153, 46);
+            this.btnPedidoEntreFechas.Size = new System.Drawing.Size(131, 40);
             this.btnPedidoEntreFechas.TabIndex = 24;
             this.btnPedidoEntreFechas.Text = "Pedido entre Fechas";
             this.btnPedidoEntreFechas.UseVisualStyleBackColor = true;
-            //this.btnPedidoEntreFechas.Click += new System.EventHandler(this.btnPedidoEntreFechas_Click);
             // 
             // btnPedidosXEmpleado
             // 
-            this.btnPedidosXEmpleado.Location = new System.Drawing.Point(943, 254);
+            this.btnPedidosXEmpleado.Location = new System.Drawing.Point(808, 220);
             this.btnPedidosXEmpleado.Name = "btnPedidosXEmpleado";
-            this.btnPedidosXEmpleado.Size = new System.Drawing.Size(153, 46);
+            this.btnPedidosXEmpleado.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosXEmpleado.TabIndex = 27;
             this.btnPedidosXEmpleado.Text = "Pedidos por Empleado";
             this.btnPedidosXEmpleado.UseVisualStyleBackColor = true;
-            //this.btnPedidosXEmpleado.Click += new System.EventHandler(this.btnPedidosXEmpleado_Click);
             // 
             // btnPedidosXCliente
             // 
-            this.btnPedidosXCliente.Location = new System.Drawing.Point(784, 254);
+            this.btnPedidosXCliente.Location = new System.Drawing.Point(672, 220);
             this.btnPedidosXCliente.Name = "btnPedidosXCliente";
-            this.btnPedidosXCliente.Size = new System.Drawing.Size(153, 46);
+            this.btnPedidosXCliente.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosXCliente.TabIndex = 26;
             this.btnPedidosXCliente.Text = "Pedidos por Cliente";
             this.btnPedidosXCliente.UseVisualStyleBackColor = true;
-            //this.btnPedidosXCliente.Click += new System.EventHandler(this.btnPedidosXCliente_Click);
-            // 
-            // btnReportes
-            // 
-            this.btnReportes.Location = new System.Drawing.Point(484, 298);
-            this.btnReportes.Name = "btnReportes";
-            this.btnReportes.Size = new System.Drawing.Size(153, 46);
-            this.btnReportes.TabIndex = 28;
-            this.btnReportes.Text = "Reportes";
-            this.btnReportes.UseVisualStyleBackColor = true;
-            //this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // Frm_PaginaPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 387);
-            this.Controls.Add(this.btnReportes);
+            this.ClientSize = new System.Drawing.Size(947, 335);
             this.Controls.Add(this.btnPedidosXEmpleado);
             this.Controls.Add(this.btnPedidosXCliente);
             this.Controls.Add(this.btnPedidosEntrePrecios);
@@ -374,6 +354,5 @@ namespace TuLuzNet
         private System.Windows.Forms.Button btnPedidoEntreFechas;
         private System.Windows.Forms.Button btnPedidosXEmpleado;
         private System.Windows.Forms.Button btnPedidosXCliente;
-        private System.Windows.Forms.Button btnReportes;
     }
 }
