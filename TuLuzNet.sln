@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuLuzNet", "TuLuzNet.csproj", "{EAC94057-4F35-4B48-BCD8-46821C3C0C72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EAC94057-4F35-4B48-BCD8-46821C3C0C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAC94057-4F35-4B48-BCD8-46821C3C0C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAC94057-4F35-4B48-BCD8-46821C3C0C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAC94057-4F35-4B48-BCD8-46821C3C0C72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AD08451-25CC-46A0-A999-30CC32C1EA4F}
+	EndGlobalSection
+EndGlobal

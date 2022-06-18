@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EAC94057-4F35-4B48-BCD8-46821C3C0C72}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>TuLuzNet</RootNamespace>
+    <AssemblyName>TuLuzNet</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1484.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABMs\Barrios\Frm_ABM_Barrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Barrios\Frm_ABM_Barrios.designer.cs">
+      <DependentUpon>Frm_ABM_Barrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Barrios\Frm_AltaBarrios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Barrios\Frm_AltaBarrios.Designer.cs">
+      <DependentUpon>Frm_AltaBarrios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Barrios\Frm_ModificarBarrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Barrios\Frm_ModificarBarrio.Designer.cs">
+      <DependentUpon>Frm_ModificarBarrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_ABM_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_ABM_Clientes.Designer.cs">
+      <DependentUpon>Frm_ABM_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_AltaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_AltaClientes.Designer.cs">
+      <DependentUpon>Frm_AltaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_ModificarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Clientes\Frm_ModificarCliente.designer.cs">
+      <DependentUpon>Frm_ModificarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_ABM_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_ABM_Empleados.designer.cs">
+      <DependentUpon>Frm_ABM_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_AltaEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_AltaEmpleados.designer.cs">
+      <DependentUpon>Frm_AltaEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_ModificarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Empleados\Frm_ModificarEmpleado.designer.cs">
+      <DependentUpon>Frm_ModificarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_ABM_Localidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_ABM_Localidades.designer.cs">
+      <DependentUpon>Frm_ABM_Localidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_AltaLocalidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_AltaLocalidades.designer.cs">
+      <DependentUpon>Frm_AltaLocalidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_ModificarLocalidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Localidades\Frm_ModificarLocalidad.designer.cs">
+      <DependentUpon>Frm_ModificarLocalidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_ABM_Productos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_ABM_Productos.designer.cs">
+      <DependentUpon>Frm_ABM_Productos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_AltaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_AltaProductos.designer.cs">
+      <DependentUpon>Frm_AltaProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_ModificarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Productos\Frm_ModificarProducto.designer.cs">
+      <DependentUpon>Frm_ModificarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_ABM_Proveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_ABM_Proveedores.designer.cs">
+      <DependentUpon>Frm_ABM_Proveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_AltaProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_AltaProveedores.designer.cs">
+      <DependentUpon>Frm_AltaProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_ModificarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Proveedores\Frm_ModificarProveedor.designer.cs">
+      <DependentUpon>Frm_ModificarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_ABM_Provincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_ABM_Provincias.Designer.cs">
+      <DependentUpon>Frm_ABM_Provincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_AltaProvincias.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_AltaProvincias.designer.cs">
+      <DependentUpon>Frm_AltaProvincias.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_ModificarProvincia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\Provincias\Frm_ModificarProvincia.designer.cs">
+      <DependentUpon>Frm_ModificarProvincia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_ABM_TipoDocumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_ABM_TipoDocumentos.designer.cs">
+      <DependentUpon>Frm_ABM_TipoDocumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_AltaTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_AltaTipoDocumento.designer.cs">
+      <DependentUpon>Frm_AltaTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_ModificarTipoDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMs\TipoDocumento\Frm_ModificarTipoDocumento.designer.cs">
+      <DependentUpon>Frm_ModificarTipoDocumento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\BD_acceso_a_datos.cs" />
+    <Compile Include="Clases\CheckBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\ComboBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\DateTimePicker01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\EstructuraCombo.cs" />
+    <Compile Include="Clases\Grid01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\TextBox01.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Clases\TratamientosEspeciales.cs" />
+    <Compile Include="Frm_PaginaPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_PaginaPrincipal.Designer.cs">
+      <DependentUpon>Frm_PaginaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Negocio\Ne_Barrios.cs" />
+    <Compile Include="Negocio\Ne_Clientes.cs" />
+    <Compile Include="Negocio\Ne_Cotizaciones.cs" />
+    <Compile Include="Negocio\Ne_DetalleFactura.cs" />
+    <Compile Include="Negocio\Ne_Empleados.cs" />
+    <Compile Include="Negocio\Ne_EstadosCotizaciones.cs" />
+    <Compile Include="Negocio\Ne_Facturas.cs" />
+    <Compile Include="Negocio\Ne_Localidad.cs" />
+    <Compile Include="Negocio\Ne_Pedidos.cs" />
+    <Compile Include="Negocio\Ne_Productos.cs" />
+    <Compile Include="Negocio\Ne_Proveedores.cs" />
+    <Compile Include="Negocio\Ne_Provincias.cs" />
+    <Compile Include="Negocio\Ne_TipoDocumento.cs" />
+    <Compile Include="Procedimientos\Cotizaciones\Frm_ABMC_Cotizaciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones\Frm_ABMC_Cotizaciones.Designer.cs">
+      <DependentUpon>Frm_ABMC_Cotizaciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones\Frm_AltaCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones\Frm_AltaCotizacion.Designer.cs">
+      <DependentUpon>Frm_AltaCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones\Frm_ModificarCotizacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Cotizaciones\Frm_ModificarCotizacion.Designer.cs">
+      <DependentUpon>Frm_ModificarCotizacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaAlta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaAlta.Designer.cs">
+      <DependentUpon>Frm_DetalleFacturaAlta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaModificar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaModificar.Designer.cs">
+      <DependentUpon>Frm_DetalleFacturaModificar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_AltaFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_AltaFactura.Designer.cs">
+      <DependentUpon>Frm_AltaFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_CargarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_CargarFactura.Designer.cs">
+      <DependentUpon>Frm_CargarFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_ABM_Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_ABM_Pedidos.Designer.cs">
+      <DependentUpon>Frm_ABM_Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_Alta_Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_Alta_Pedidos.Designer.cs">
+      <DependentUpon>Frm_Alta_Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_Modificar_Pedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Pedidos\Frm_Modificar_Pedidos.Designer.cs">
+      <DependentUpon>Frm_Modificar_Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <EmbeddedResource Include="ABMs\Barrios\Frm_ABM_Barrios.resx">
+      <DependentUpon>Frm_ABM_Barrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Barrios\Frm_AltaBarrios.resx">
+      <DependentUpon>Frm_AltaBarrios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Barrios\Frm_ModificarBarrio.resx">
+      <DependentUpon>Frm_ModificarBarrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Clientes\Frm_ABM_Clientes.resx">
+      <DependentUpon>Frm_ABM_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Clientes\Frm_AltaClientes.resx">
+      <DependentUpon>Frm_AltaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Clientes\Frm_ModificarCliente.resx">
+      <DependentUpon>Frm_ModificarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Empleados\Frm_ABM_Empleados.resx">
+      <DependentUpon>Frm_ABM_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Empleados\Frm_AltaEmpleados.resx">
+      <DependentUpon>Frm_AltaEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Empleados\Frm_ModificarEmpleado.resx">
+      <DependentUpon>Frm_ModificarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Localidades\Frm_ABM_Localidades.resx">
+      <DependentUpon>Frm_ABM_Localidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Localidades\Frm_AltaLocalidades.resx">
+      <DependentUpon>Frm_AltaLocalidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Localidades\Frm_ModificarLocalidad.resx">
+      <DependentUpon>Frm_ModificarLocalidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Productos\Frm_ABM_Productos.resx">
+      <DependentUpon>Frm_ABM_Productos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Productos\Frm_AltaProductos.resx">
+      <DependentUpon>Frm_AltaProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Productos\Frm_ModificarProducto.resx">
+      <DependentUpon>Frm_ModificarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Proveedores\Frm_ABM_Proveedores.resx">
+      <DependentUpon>Frm_ABM_Proveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Proveedores\Frm_AltaProveedores.resx">
+      <DependentUpon>Frm_AltaProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Proveedores\Frm_ModificarProveedor.resx">
+      <DependentUpon>Frm_ModificarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Provincias\Frm_ABM_Provincias.resx">
+      <DependentUpon>Frm_ABM_Provincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Provincias\Frm_AltaProvincias.resx">
+      <DependentUpon>Frm_AltaProvincias.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\Provincias\Frm_ModificarProvincia.resx">
+      <DependentUpon>Frm_ModificarProvincia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\TipoDocumento\Frm_ABM_TipoDocumentos.resx">
+      <DependentUpon>Frm_ABM_TipoDocumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\TipoDocumento\Frm_AltaTipoDocumento.resx">
+      <DependentUpon>Frm_AltaTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMs\TipoDocumento\Frm_ModificarTipoDocumento.resx">
+      <DependentUpon>Frm_ModificarTipoDocumento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_PaginaPrincipal.resx">
+      <DependentUpon>Frm_PaginaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Cotizaciones\Frm_ABMC_Cotizaciones.resx">
+      <DependentUpon>Frm_ABMC_Cotizaciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Cotizaciones\Frm_AltaCotizacion.resx">
+      <DependentUpon>Frm_AltaCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Cotizaciones\Frm_ModificarCotizacion.resx">
+      <DependentUpon>Frm_ModificarCotizacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaAlta.resx">
+      <DependentUpon>Frm_DetalleFacturaAlta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaModificar.resx">
+      <DependentUpon>Frm_DetalleFacturaModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Factura\Frm_AltaFactura.resx">
+      <DependentUpon>Frm_AltaFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Factura\Frm_CargarFactura.resx">
+      <DependentUpon>Frm_CargarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Pedidos\Frm_ABM_Pedidos.resx">
+      <DependentUpon>Frm_ABM_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Pedidos\Frm_Alta_Pedidos.resx">
+      <DependentUpon>Frm_Alta_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Pedidos\Frm_Modificar_Pedidos.resx">
+      <DependentUpon>Frm_Modificar_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reportes\ClientesXActivo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
