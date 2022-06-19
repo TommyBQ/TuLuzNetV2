@@ -307,6 +307,34 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\ClientesXActivo\ClientesDBSimulator.cs">
+      <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\ClientesDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.Designer.cs">
+      <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.cs">
+      <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.Designer.cs">
+      <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ABMs\Barrios\Frm_ABM_Barrios.resx">
       <DependentUpon>Frm_ABM_Barrios.cs</DependentUpon>
@@ -422,6 +450,14 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.resx">
+      <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Rpt_CliXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.resx">
+      <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Rpt_CotXEmpleado.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -432,13 +468,33 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Reportes\ClientesXActivo\ClientesDBSimulator.xsc">
+      <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ClientesXActivo\ClientesDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClientesDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ClientesXActivo\ClientesDBSimulator.xss">
+      <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xsc">
+      <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CotizacionesDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xss">
+      <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Reportes\ClientesXActivo\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">

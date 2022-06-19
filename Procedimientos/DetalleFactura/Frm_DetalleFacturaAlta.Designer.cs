@@ -43,10 +43,10 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             // lblAgregarCliente
             // 
             this.lblAgregarCliente.AutoSize = true;
-            this.lblAgregarCliente.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblAgregarCliente.Location = new System.Drawing.Point(12, 9);
+            this.lblAgregarCliente.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblAgregarCliente.Location = new System.Drawing.Point(10, 8);
             this.lblAgregarCliente.Name = "lblAgregarCliente";
-            this.lblAgregarCliente.Size = new System.Drawing.Size(263, 32);
+            this.lblAgregarCliente.Size = new System.Drawing.Size(264, 32);
             this.lblAgregarCliente.TabIndex = 19;
             this.lblAgregarCliente.Text = "Agregar Detalle Factura";
             // 
@@ -57,16 +57,16 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             this.comboBox011._repetible = false;
             this.comboBox011._Validable = false;
             this.comboBox011.FormattingEnabled = true;
-            this.comboBox011.Location = new System.Drawing.Point(87, 68);
+            this.comboBox011.Location = new System.Drawing.Point(85, 61);
             this.comboBox011.Name = "comboBox011";
-            this.comboBox011.Size = new System.Drawing.Size(168, 23);
+            this.comboBox011.Size = new System.Drawing.Size(145, 21);
             this.comboBox011.TabIndex = 20;
             // 
             // lblCuit
             // 
             this.lblCuit.AutoSize = true;
-            this.lblCuit.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCuit.Location = new System.Drawing.Point(12, 71);
+            this.lblCuit.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblCuit.Location = new System.Drawing.Point(10, 62);
             this.lblCuit.Name = "lblCuit";
             this.lblCuit.Size = new System.Drawing.Size(69, 20);
             this.lblCuit.TabIndex = 27;
@@ -75,8 +75,8 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 168);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(10, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(50, 20);
             this.label1.TabIndex = 28;
@@ -85,8 +85,8 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(12, 117);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label2.Location = new System.Drawing.Point(10, 101);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(69, 20);
             this.label2.TabIndex = 29;
@@ -98,9 +98,9 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             this.textBox011._mensajeError = null;
             this.textBox011._repetible = false;
             this.textBox011._validable = false;
-            this.textBox011.Location = new System.Drawing.Point(87, 118);
+            this.textBox011.Location = new System.Drawing.Point(85, 101);
             this.textBox011.Name = "textBox011";
-            this.textBox011.Size = new System.Drawing.Size(168, 23);
+            this.textBox011.Size = new System.Drawing.Size(145, 20);
             this.textBox011.TabIndex = 30;
             // 
             // textBox012
@@ -109,17 +109,17 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             this.textBox012._mensajeError = null;
             this.textBox012._repetible = false;
             this.textBox012._validable = false;
-            this.textBox012.Location = new System.Drawing.Point(87, 165);
+            this.textBox012.Location = new System.Drawing.Point(85, 142);
             this.textBox012.Name = "textBox012";
-            this.textBox012.Size = new System.Drawing.Size(168, 23);
+            this.textBox012.Size = new System.Drawing.Size(145, 20);
             this.textBox012.TabIndex = 31;
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(294, 222);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnCancelar.Location = new System.Drawing.Point(252, 189);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 29);
             this.btnCancelar.TabIndex = 33;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -127,10 +127,10 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregar.Location = new System.Drawing.Point(201, 222);
+            this.btnAgregar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnAgregar.Location = new System.Drawing.Point(172, 189);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(87, 30);
+            this.btnAgregar.Size = new System.Drawing.Size(75, 29);
             this.btnAgregar.TabIndex = 32;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
@@ -138,9 +138,9 @@ namespace TuLuzNet.Procedimientos.DetalleFactura
             // 
             // Frm_DetalleFacturaAlta
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(386, 256);
+            this.ClientSize = new System.Drawing.Size(331, 222);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.textBox012);

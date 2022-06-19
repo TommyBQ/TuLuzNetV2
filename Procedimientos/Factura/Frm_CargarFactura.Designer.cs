@@ -53,16 +53,16 @@ namespace TuLuzNet.Procedimientos.Factura
             this.textBox011._mensajeError = null;
             this.textBox011._repetible = false;
             this.textBox011._validable = false;
-            this.textBox011.Location = new System.Drawing.Point(83, 83);
+            this.textBox011.Location = new System.Drawing.Point(71, 72);
             this.textBox011.Name = "textBox011";
-            this.textBox011.Size = new System.Drawing.Size(132, 23);
+            this.textBox011.Size = new System.Drawing.Size(114, 20);
             this.textBox011.TabIndex = 11;
             // 
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(6, 71);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNombre.Location = new System.Drawing.Point(5, 62);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(77, 20);
             this.lblNombre.TabIndex = 14;
@@ -71,10 +71,10 @@ namespace TuLuzNet.Procedimientos.Factura
             // lblBarrio
             // 
             this.lblBarrio.AutoSize = true;
-            this.lblBarrio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblBarrio.Location = new System.Drawing.Point(6, 19);
+            this.lblBarrio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblBarrio.Location = new System.Drawing.Point(5, 16);
             this.lblBarrio.Name = "lblBarrio";
-            this.lblBarrio.Size = new System.Drawing.Size(158, 32);
+            this.lblBarrio.Size = new System.Drawing.Size(159, 32);
             this.lblBarrio.TabIndex = 15;
             this.lblBarrio.Text = "ABM Facturas";
             // 
@@ -91,9 +91,9 @@ namespace TuLuzNet.Procedimientos.Factura
             this.grBoxFiltros.Controls.Add(this.txtNumFactura);
             this.grBoxFiltros.Controls.Add(this.lblBarrio);
             this.grBoxFiltros.Controls.Add(this.lblNombre);
-            this.grBoxFiltros.Location = new System.Drawing.Point(12, 12);
+            this.grBoxFiltros.Location = new System.Drawing.Point(10, 10);
             this.grBoxFiltros.Name = "grBoxFiltros";
-            this.grBoxFiltros.Size = new System.Drawing.Size(650, 436);
+            this.grBoxFiltros.Size = new System.Drawing.Size(557, 378);
             this.grBoxFiltros.TabIndex = 18;
             this.grBoxFiltros.TabStop = false;
             this.grBoxFiltros.Text = "Filtros";
@@ -104,8 +104,8 @@ namespace TuLuzNet.Procedimientos.Factura
             this.chkNoActivo._mensajeError = null;
             this.chkNoActivo._validable = false;
             this.chkNoActivo.AutoSize = true;
-            this.chkNoActivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkNoActivo.Location = new System.Drawing.Point(248, 78);
+            this.chkNoActivo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.chkNoActivo.Location = new System.Drawing.Point(213, 68);
             this.chkNoActivo.Name = "chkNoActivo";
             this.chkNoActivo.Size = new System.Drawing.Size(97, 25);
             this.chkNoActivo.TabIndex = 24;
@@ -118,8 +118,8 @@ namespace TuLuzNet.Procedimientos.Factura
             this.chkActivo._mensajeError = null;
             this.chkActivo._validable = false;
             this.chkActivo.AutoSize = true;
-            this.chkActivo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkActivo.Location = new System.Drawing.Point(248, 47);
+            this.chkActivo.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.chkActivo.Location = new System.Drawing.Point(213, 41);
             this.chkActivo.Name = "chkActivo";
             this.chkActivo.Size = new System.Drawing.Size(72, 25);
             this.chkActivo.TabIndex = 23;
@@ -130,9 +130,9 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.btnVolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolver.BackgroundImage")));
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVolver.Location = new System.Drawing.Point(593, 386);
+            this.btnVolver.Location = new System.Drawing.Point(508, 335);
             this.btnVolver.Name = "btnVolver";
-            this.btnVolver.Size = new System.Drawing.Size(45, 43);
+            this.btnVolver.Size = new System.Drawing.Size(39, 37);
             this.btnVolver.TabIndex = 22;
             this.btnVolver.UseVisualStyleBackColor = true;
             this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
@@ -141,9 +141,9 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.Location = new System.Drawing.Point(6, 386);
+            this.btnAgregar.Location = new System.Drawing.Point(5, 335);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(44, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(38, 37);
             this.btnAgregar.TabIndex = 20;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -152,18 +152,18 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.btnBorrarLogico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrarLogico.BackgroundImage")));
             this.btnBorrarLogico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrarLogico.Location = new System.Drawing.Point(56, 387);
+            this.btnBorrarLogico.Location = new System.Drawing.Point(48, 335);
             this.btnBorrarLogico.Name = "btnBorrarLogico";
-            this.btnBorrarLogico.Size = new System.Drawing.Size(45, 43);
+            this.btnBorrarLogico.Size = new System.Drawing.Size(39, 37);
             this.btnBorrarLogico.TabIndex = 21;
             this.btnBorrarLogico.UseVisualStyleBackColor = true;
             // 
             // btnBuscarTodos
             // 
-            this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarTodos.Location = new System.Drawing.Point(409, 95);
+            this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscarTodos.Location = new System.Drawing.Point(351, 79);
             this.btnBuscarTodos.Name = "btnBuscarTodos";
-            this.btnBuscarTodos.Size = new System.Drawing.Size(126, 26);
+            this.btnBuscarTodos.Size = new System.Drawing.Size(108, 26);
             this.btnBuscarTodos.TabIndex = 19;
             this.btnBuscarTodos.Text = "Buscar Todos";
             this.btnBuscarTodos.UseVisualStyleBackColor = true;
@@ -171,10 +171,10 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(541, 95);
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscar.Location = new System.Drawing.Point(464, 79);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(97, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(83, 26);
             this.btnBuscar.TabIndex = 18;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -182,12 +182,15 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             // dataGridViewFactura
             // 
+            this.dataGridViewFactura.AllowUserToAddRows = false;
             this.dataGridViewFactura.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewFactura.Location = new System.Drawing.Point(6, 127);
+            this.dataGridViewFactura.Location = new System.Drawing.Point(5, 110);
             this.dataGridViewFactura.Name = "dataGridViewFactura";
+            this.dataGridViewFactura.RowHeadersVisible = false;
             this.dataGridViewFactura.RowTemplate.Height = 25;
-            this.dataGridViewFactura.Size = new System.Drawing.Size(632, 253);
+            this.dataGridViewFactura.Size = new System.Drawing.Size(542, 219);
             this.dataGridViewFactura.TabIndex = 17;
+            this.dataGridViewFactura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFactura_CellContentClick);
             // 
             // txtNumFactura
             // 
@@ -195,16 +198,16 @@ namespace TuLuzNet.Procedimientos.Factura
             this.txtNumFactura._mensajeError = null;
             this.txtNumFactura._repetible = false;
             this.txtNumFactura._validable = false;
-            this.txtNumFactura.Location = new System.Drawing.Point(89, 71);
+            this.txtNumFactura.Location = new System.Drawing.Point(81, 62);
             this.txtNumFactura.Name = "txtNumFactura";
-            this.txtNumFactura.Size = new System.Drawing.Size(140, 23);
+            this.txtNumFactura.Size = new System.Drawing.Size(121, 20);
             this.txtNumFactura.TabIndex = 16;
             // 
             // Frm_CargarFactura
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 460);
+            this.ClientSize = new System.Drawing.Size(578, 399);
             this.Controls.Add(this.grBoxFiltros);
             this.Controls.Add(this.textBox011);
             this.Name = "Frm_CargarFactura";

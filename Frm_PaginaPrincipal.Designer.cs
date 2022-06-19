@@ -57,7 +57,7 @@ namespace TuLuzNet
             // 
             // btnProveedores
             // 
-            this.btnProveedores.Location = new System.Drawing.Point(10, 85);
+            this.btnProveedores.Location = new System.Drawing.Point(16, 90);
             this.btnProveedores.Name = "btnProveedores";
             this.btnProveedores.Size = new System.Drawing.Size(131, 40);
             this.btnProveedores.TabIndex = 0;
@@ -67,7 +67,7 @@ namespace TuLuzNet
             // 
             // btnEmpleados
             // 
-            this.btnEmpleados.Location = new System.Drawing.Point(147, 85);
+            this.btnEmpleados.Location = new System.Drawing.Point(153, 90);
             this.btnEmpleados.Name = "btnEmpleados";
             this.btnEmpleados.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleados.TabIndex = 1;
@@ -77,7 +77,7 @@ namespace TuLuzNet
             // 
             // btnClientes
             // 
-            this.btnClientes.Location = new System.Drawing.Point(10, 130);
+            this.btnClientes.Location = new System.Drawing.Point(16, 135);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.Size = new System.Drawing.Size(131, 40);
             this.btnClientes.TabIndex = 2;
@@ -87,7 +87,7 @@ namespace TuLuzNet
             // 
             // btnProductos
             // 
-            this.btnProductos.Location = new System.Drawing.Point(147, 130);
+            this.btnProductos.Location = new System.Drawing.Point(153, 135);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(131, 40);
             this.btnProductos.TabIndex = 3;
@@ -102,7 +102,7 @@ namespace TuLuzNet
                 | System.Drawing.FontStyle.Underline))));
             this.lblTuLuz.Location = new System.Drawing.Point(0, 0);
             this.lblTuLuz.Name = "lblTuLuz";
-            this.lblTuLuz.Size = new System.Drawing.Size(947, 39);
+            this.lblTuLuz.Size = new System.Drawing.Size(960, 39);
             this.lblTuLuz.TabIndex = 8;
             this.lblTuLuz.Text = "TuLuz";
             this.lblTuLuz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -120,7 +120,7 @@ namespace TuLuzNet
             // 
             // btnProvincia
             // 
-            this.btnProvincia.Location = new System.Drawing.Point(10, 220);
+            this.btnProvincia.Location = new System.Drawing.Point(16, 225);
             this.btnProvincia.Name = "btnProvincia";
             this.btnProvincia.Size = new System.Drawing.Size(131, 40);
             this.btnProvincia.TabIndex = 10;
@@ -130,7 +130,7 @@ namespace TuLuzNet
             // 
             // btnTipoDocumento
             // 
-            this.btnTipoDocumento.Location = new System.Drawing.Point(147, 220);
+            this.btnTipoDocumento.Location = new System.Drawing.Point(153, 225);
             this.btnTipoDocumento.Name = "btnTipoDocumento";
             this.btnTipoDocumento.Size = new System.Drawing.Size(131, 40);
             this.btnTipoDocumento.TabIndex = 11;
@@ -140,7 +140,7 @@ namespace TuLuzNet
             // 
             // btnLocalidad
             // 
-            this.btnLocalidad.Location = new System.Drawing.Point(147, 175);
+            this.btnLocalidad.Location = new System.Drawing.Point(153, 180);
             this.btnLocalidad.Name = "btnLocalidad";
             this.btnLocalidad.Size = new System.Drawing.Size(131, 40);
             this.btnLocalidad.TabIndex = 12;
@@ -150,7 +150,7 @@ namespace TuLuzNet
             // 
             // btnBarrio
             // 
-            this.btnBarrio.Location = new System.Drawing.Point(10, 175);
+            this.btnBarrio.Location = new System.Drawing.Point(16, 180);
             this.btnBarrio.Name = "btnBarrio";
             this.btnBarrio.Size = new System.Drawing.Size(131, 40);
             this.btnBarrio.TabIndex = 13;
@@ -160,7 +160,7 @@ namespace TuLuzNet
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(869, 300);
+            this.btnSalir.Location = new System.Drawing.Point(875, 298);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 25);
             this.btnSalir.TabIndex = 14;
@@ -180,7 +180,7 @@ namespace TuLuzNet
             // 
             // btnCargarPedido
             // 
-            this.btnCargarPedido.Location = new System.Drawing.Point(344, 85);
+            this.btnCargarPedido.Location = new System.Drawing.Point(350, 90);
             this.btnCargarPedido.Name = "btnCargarPedido";
             this.btnCargarPedido.Size = new System.Drawing.Size(131, 40);
             this.btnCargarPedido.TabIndex = 16;
@@ -190,7 +190,7 @@ namespace TuLuzNet
             // 
             // btnCargarCotizacion
             // 
-            this.btnCargarCotizacion.Location = new System.Drawing.Point(480, 85);
+            this.btnCargarCotizacion.Location = new System.Drawing.Point(486, 90);
             this.btnCargarCotizacion.Name = "btnCargarCotizacion";
             this.btnCargarCotizacion.Size = new System.Drawing.Size(131, 40);
             this.btnCargarCotizacion.TabIndex = 17;
@@ -200,7 +200,7 @@ namespace TuLuzNet
             // 
             // btnCargarFactura
             // 
-            this.btnCargarFactura.Location = new System.Drawing.Point(344, 130);
+            this.btnCargarFactura.Location = new System.Drawing.Point(350, 135);
             this.btnCargarFactura.Name = "btnCargarFactura";
             this.btnCargarFactura.Size = new System.Drawing.Size(131, 40);
             this.btnCargarFactura.TabIndex = 18;
@@ -220,25 +220,27 @@ namespace TuLuzNet
             // 
             // btnReportesXActivos
             // 
-            this.btnReportesXActivos.Location = new System.Drawing.Point(672, 85);
+            this.btnReportesXActivos.Location = new System.Drawing.Point(678, 90);
             this.btnReportesXActivos.Name = "btnReportesXActivos";
             this.btnReportesXActivos.Size = new System.Drawing.Size(131, 40);
             this.btnReportesXActivos.TabIndex = 20;
             this.btnReportesXActivos.Text = "Reportes Por Activos";
             this.btnReportesXActivos.UseVisualStyleBackColor = true;
+            this.btnReportesXActivos.Click += new System.EventHandler(this.btnReportesXActivos_Click);
             // 
             // btnCotizacionesXEmpleado
             // 
-            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(808, 85);
+            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(814, 90);
             this.btnCotizacionesXEmpleado.Name = "btnCotizacionesXEmpleado";
             this.btnCotizacionesXEmpleado.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXEmpleado.TabIndex = 21;
             this.btnCotizacionesXEmpleado.Text = "Cotizaciones por Empleado";
             this.btnCotizacionesXEmpleado.UseVisualStyleBackColor = true;
+            this.btnCotizacionesXEmpleado.Click += new System.EventHandler(this.btnCotizacionesXEmpleado_Click);
             // 
             // btnEmpleadosXActivo
             // 
-            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(808, 130);
+            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(814, 135);
             this.btnEmpleadosXActivo.Name = "btnEmpleadosXActivo";
             this.btnEmpleadosXActivo.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleadosXActivo.TabIndex = 23;
@@ -247,7 +249,7 @@ namespace TuLuzNet
             // 
             // btnCotizacionesXPrecio
             // 
-            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(672, 130);
+            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(678, 135);
             this.btnCotizacionesXPrecio.Name = "btnCotizacionesXPrecio";
             this.btnCotizacionesXPrecio.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXPrecio.TabIndex = 22;
@@ -256,7 +258,7 @@ namespace TuLuzNet
             // 
             // btnPedidosEntrePrecios
             // 
-            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(808, 175);
+            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(814, 180);
             this.btnPedidosEntrePrecios.Name = "btnPedidosEntrePrecios";
             this.btnPedidosEntrePrecios.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosEntrePrecios.TabIndex = 25;
@@ -265,7 +267,7 @@ namespace TuLuzNet
             // 
             // btnPedidoEntreFechas
             // 
-            this.btnPedidoEntreFechas.Location = new System.Drawing.Point(672, 175);
+            this.btnPedidoEntreFechas.Location = new System.Drawing.Point(678, 180);
             this.btnPedidoEntreFechas.Name = "btnPedidoEntreFechas";
             this.btnPedidoEntreFechas.Size = new System.Drawing.Size(131, 40);
             this.btnPedidoEntreFechas.TabIndex = 24;
@@ -274,7 +276,7 @@ namespace TuLuzNet
             // 
             // btnPedidosXEmpleado
             // 
-            this.btnPedidosXEmpleado.Location = new System.Drawing.Point(808, 220);
+            this.btnPedidosXEmpleado.Location = new System.Drawing.Point(814, 225);
             this.btnPedidosXEmpleado.Name = "btnPedidosXEmpleado";
             this.btnPedidosXEmpleado.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosXEmpleado.TabIndex = 27;
@@ -283,7 +285,7 @@ namespace TuLuzNet
             // 
             // btnPedidosXCliente
             // 
-            this.btnPedidosXCliente.Location = new System.Drawing.Point(672, 220);
+            this.btnPedidosXCliente.Location = new System.Drawing.Point(678, 225);
             this.btnPedidosXCliente.Name = "btnPedidosXCliente";
             this.btnPedidosXCliente.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosXCliente.TabIndex = 26;
@@ -294,7 +296,7 @@ namespace TuLuzNet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(947, 335);
+            this.ClientSize = new System.Drawing.Size(960, 335);
             this.Controls.Add(this.btnPedidosXEmpleado);
             this.Controls.Add(this.btnPedidosXCliente);
             this.Controls.Add(this.btnPedidosEntrePrecios);

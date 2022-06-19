@@ -56,30 +56,30 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             this.dataGridViewCotizaciones.AllowUserToAddRows = false;
             this.dataGridViewCotizaciones.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCotizaciones.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCotizaciones.Location = new System.Drawing.Point(10, 173);
+            this.dataGridViewCotizaciones.Location = new System.Drawing.Point(9, 150);
             this.dataGridViewCotizaciones.Name = "dataGridViewCotizaciones";
             this.dataGridViewCotizaciones.RowHeadersVisible = false;
             this.dataGridViewCotizaciones.RowTemplate.Height = 25;
-            this.dataGridViewCotizaciones.Size = new System.Drawing.Size(1001, 219);
+            this.dataGridViewCotizaciones.Size = new System.Drawing.Size(858, 190);
             this.dataGridViewCotizaciones.TabIndex = 0;
             // 
             // btnSalir
             // 
             this.btnSalir.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir.BackgroundImage")));
             this.btnSalir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnSalir.Location = new System.Drawing.Point(988, 418);
+            this.btnSalir.Location = new System.Drawing.Point(847, 362);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(45, 43);
+            this.btnSalir.Size = new System.Drawing.Size(39, 37);
             this.btnSalir.TabIndex = 21;
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(914, 141);
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscar.Location = new System.Drawing.Point(783, 119);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(97, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(83, 26);
             this.btnBuscar.TabIndex = 22;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -87,10 +87,10 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             // btnBuscarTodos
             // 
-            this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarTodos.Location = new System.Drawing.Point(769, 141);
+            this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscarTodos.Location = new System.Drawing.Point(659, 119);
             this.btnBuscarTodos.Name = "btnBuscarTodos";
-            this.btnBuscarTodos.Size = new System.Drawing.Size(139, 26);
+            this.btnBuscarTodos.Size = new System.Drawing.Size(119, 26);
             this.btnBuscarTodos.TabIndex = 23;
             this.btnBuscarTodos.Text = "Buscar Todos";
             this.btnBuscarTodos.UseVisualStyleBackColor = true;
@@ -110,18 +110,18 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             this.groupBox1.Controls.Add(this.dataGridViewCotizaciones);
             this.groupBox1.Controls.Add(this.btnBuscar);
             this.groupBox1.Controls.Add(this.btnBuscarTodos);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1021, 400);
+            this.groupBox1.Size = new System.Drawing.Size(875, 347);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Filtros";
             // 
             // txtCuitCliente
             // 
-            this.txtCuitCliente.Location = new System.Drawing.Point(435, 74);
+            this.txtCuitCliente.Location = new System.Drawing.Point(373, 64);
             this.txtCuitCliente.Name = "txtCuitCliente";
-            this.txtCuitCliente.Size = new System.Drawing.Size(189, 23);
+            this.txtCuitCliente.Size = new System.Drawing.Size(163, 20);
             this.txtCuitCliente.TabIndex = 32;
             this.txtCuitCliente.Click += new System.EventHandler(this.txtCuitCliente_Click);
             // 
@@ -132,17 +132,17 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             this.cmbEstado._repetible = false;
             this.cmbEstado._Validable = false;
             this.cmbEstado.FormattingEnabled = true;
-            this.cmbEstado.Location = new System.Drawing.Point(435, 106);
+            this.cmbEstado.Location = new System.Drawing.Point(373, 92);
             this.cmbEstado.Name = "cmbEstado";
-            this.cmbEstado.Size = new System.Drawing.Size(189, 23);
+            this.cmbEstado.Size = new System.Drawing.Size(163, 21);
             this.cmbEstado.TabIndex = 31;
             this.cmbEstado.Click += new System.EventHandler(this.cmbEstado_Click);
             // 
             // lblEstado
             // 
             this.lblEstado.AutoSize = true;
-            this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblEstado.Location = new System.Drawing.Point(331, 106);
+            this.lblEstado.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblEstado.Location = new System.Drawing.Point(284, 92);
             this.lblEstado.Name = "lblEstado";
             this.lblEstado.Size = new System.Drawing.Size(54, 20);
             this.lblEstado.TabIndex = 30;
@@ -151,8 +151,8 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // lblCCliente
             // 
             this.lblCCliente.AutoSize = true;
-            this.lblCCliente.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCCliente.Location = new System.Drawing.Point(331, 77);
+            this.lblCCliente.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblCCliente.Location = new System.Drawing.Point(284, 67);
             this.lblCCliente.Name = "lblCCliente";
             this.lblCCliente.Size = new System.Drawing.Size(85, 20);
             this.lblCCliente.TabIndex = 29;
@@ -160,17 +160,17 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             // txtAño
             // 
-            this.txtAño.Location = new System.Drawing.Point(101, 106);
+            this.txtAño.Location = new System.Drawing.Point(87, 92);
             this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(189, 23);
+            this.txtAño.Size = new System.Drawing.Size(163, 20);
             this.txtAño.TabIndex = 28;
             this.txtAño.Click += new System.EventHandler(this.txtAño_Click);
             // 
             // lblAño
             // 
             this.lblAño.AutoSize = true;
-            this.lblAño.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAño.Location = new System.Drawing.Point(32, 106);
+            this.lblAño.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblAño.Location = new System.Drawing.Point(27, 92);
             this.lblAño.Name = "lblAño";
             this.lblAño.Size = new System.Drawing.Size(36, 20);
             this.lblAño.TabIndex = 27;
@@ -178,17 +178,17 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             // txtNumero
             // 
-            this.txtNumero.Location = new System.Drawing.Point(101, 74);
+            this.txtNumero.Location = new System.Drawing.Point(87, 64);
             this.txtNumero.Name = "txtNumero";
-            this.txtNumero.Size = new System.Drawing.Size(189, 23);
+            this.txtNumero.Size = new System.Drawing.Size(163, 20);
             this.txtNumero.TabIndex = 26;
             this.txtNumero.Click += new System.EventHandler(this.txtNumero_Click);
             // 
             // lblNumero
             // 
             this.lblNumero.AutoSize = true;
-            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumero.Location = new System.Drawing.Point(31, 77);
+            this.lblNumero.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNumero.Location = new System.Drawing.Point(27, 67);
             this.lblNumero.Name = "lblNumero";
             this.lblNumero.Size = new System.Drawing.Size(63, 20);
             this.lblNumero.TabIndex = 25;
@@ -197,10 +197,10 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // lblCotiza
             // 
             this.lblCotiza.AutoSize = true;
-            this.lblCotiza.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblCotiza.Location = new System.Drawing.Point(10, 19);
+            this.lblCotiza.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblCotiza.Location = new System.Drawing.Point(9, 16);
             this.lblCotiza.Name = "lblCotiza";
-            this.lblCotiza.Size = new System.Drawing.Size(198, 32);
+            this.lblCotiza.Size = new System.Drawing.Size(199, 32);
             this.lblCotiza.TabIndex = 24;
             this.lblCotiza.Text = "ABMC Cotizacion";
             // 
@@ -208,9 +208,9 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.Location = new System.Drawing.Point(12, 418);
+            this.btnAgregar.Location = new System.Drawing.Point(10, 362);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(44, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(38, 37);
             this.btnAgregar.TabIndex = 25;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -219,9 +219,9 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             this.btnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrar.BackgroundImage")));
             this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrar.Location = new System.Drawing.Point(113, 418);
+            this.btnBorrar.Location = new System.Drawing.Point(97, 362);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(45, 43);
+            this.btnBorrar.Size = new System.Drawing.Size(39, 37);
             this.btnBorrar.TabIndex = 27;
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
@@ -230,18 +230,18 @@ namespace TuLuzNet.Procedimientos.Cotizaciones
             // 
             this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.Location = new System.Drawing.Point(62, 418);
+            this.btnEditar.Location = new System.Drawing.Point(53, 362);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(45, 43);
+            this.btnEditar.Size = new System.Drawing.Size(39, 37);
             this.btnEditar.TabIndex = 26;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Frm_ABMC_Cotizaciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1045, 473);
+            this.ClientSize = new System.Drawing.Size(896, 410);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.groupBox1);

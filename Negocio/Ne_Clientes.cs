@@ -25,9 +25,14 @@ namespace TuLuzNet.Negocio
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente]";
             return _BD_clientes.EjecutarSQL(sql);
         }
-        public DataTable RecuperarTodosClientesActivo()
+        public DataTable RecuperarClientesXActivo(int estado)
         {
-            string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE activo = 1";
+            string sql = @"SELECT cuitCliente, nombreCliente, apellidoCliente FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE activo = " + estado.ToString();
+            return _BD_clientes.EjecutarSQL(sql);
+        }
+        public DataTable RecuperarTodosClientesXActivo(int estado)
+        {
+            string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE activo = " + estado.ToString();
             return _BD_clientes.EjecutarSQL(sql);
         }
         public DataTable RecuperarClienteXNombre(string nombre)

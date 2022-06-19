@@ -63,9 +63,25 @@ namespace TuLuzNet.Negocio
             }
             return rtdo;
         }
+        public DataTable BuscarCotXVendedor(string docVend)
+        {
+            DataTable rtdo = new DataTable();
+            try
+            {
+                string sql = @"SELECT c.numeroCotizacion, c.cuitCliente, e.descripcion, c.fecha, c.precioTotal
+                               FROM [BD3K6G02_2022].[dbo].[Cotizaciones] c join [BD3K6G02_2022].[dbo].[EstadosCotizaciones] e on (c.codEstadoCotizacion=e.codEstado)
+                               WHERE numDocVendedor = '" + docVend + "'";
+                rtdo = _BD_cotizaciones.EjecutarSQL(sql);
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Error: " + e.Message, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return rtdo;
+        }
         public DataTable RecuperarClienteXCuit(string cuitCliente)
         {
-            System.Data.DataTable rtdo = new DataTable();
+            DataTable rtdo = new DataTable();
             try
             {
                 string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente]

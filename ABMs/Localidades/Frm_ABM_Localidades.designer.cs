@@ -53,9 +53,9 @@ namespace TuLuzNet.ABMs
             this.grBoxFiltros.Controls.Add(this.lblLocalidad);
             this.grBoxFiltros.Controls.Add(this.btnBuscar);
             this.grBoxFiltros.Controls.Add(this.dataGridViewLocalidades);
-            this.grBoxFiltros.Location = new System.Drawing.Point(12, 12);
+            this.grBoxFiltros.Location = new System.Drawing.Point(10, 10);
             this.grBoxFiltros.Name = "grBoxFiltros";
-            this.grBoxFiltros.Size = new System.Drawing.Size(603, 408);
+            this.grBoxFiltros.Size = new System.Drawing.Size(517, 354);
             this.grBoxFiltros.TabIndex = 22;
             this.grBoxFiltros.TabStop = false;
             this.grBoxFiltros.Text = "Filtros";
@@ -64,8 +64,8 @@ namespace TuLuzNet.ABMs
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(17, 73);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNombre.Location = new System.Drawing.Point(15, 63);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(64, 20);
             this.lblNombre.TabIndex = 13;
@@ -74,17 +74,17 @@ namespace TuLuzNet.ABMs
             // 
             // txtBoxNombre
             // 
-            this.txtBoxNombre.Location = new System.Drawing.Point(87, 70);
+            this.txtBoxNombre.Location = new System.Drawing.Point(85, 63);
             this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxNombre.Size = new System.Drawing.Size(163, 20);
             this.txtBoxNombre.TabIndex = 12;
             this.txtBoxNombre.TextChanged += new System.EventHandler(this.txtBoxNombre_TextChanged);
             // 
             // chkBoxTodos
             // 
             this.chkBoxTodos.AutoSize = true;
-            this.chkBoxTodos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkBoxTodos.Location = new System.Drawing.Point(87, 99);
+            this.chkBoxTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.chkBoxTodos.Location = new System.Drawing.Point(75, 86);
             this.chkBoxTodos.Name = "chkBoxTodos";
             this.chkBoxTodos.Size = new System.Drawing.Size(68, 24);
             this.chkBoxTodos.TabIndex = 7;
@@ -95,20 +95,20 @@ namespace TuLuzNet.ABMs
             // lblLocalidad
             // 
             this.lblLocalidad.AutoSize = true;
-            this.lblLocalidad.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblLocalidad.Location = new System.Drawing.Point(13, 18);
+            this.lblLocalidad.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblLocalidad.Location = new System.Drawing.Point(11, 16);
             this.lblLocalidad.Name = "lblLocalidad";
-            this.lblLocalidad.Size = new System.Drawing.Size(172, 32);
+            this.lblLocalidad.Size = new System.Drawing.Size(173, 32);
             this.lblLocalidad.TabIndex = 9;
             this.lblLocalidad.Text = "ABM Localidad";
             this.lblLocalidad.Click += new System.EventHandler(this.lblLocalidad_Click);
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(496, 141);
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscar.Location = new System.Drawing.Point(425, 116);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(97, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(83, 28);
             this.btnBuscar.TabIndex = 4;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -118,10 +118,10 @@ namespace TuLuzNet.ABMs
             // 
             this.dataGridViewLocalidades.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewLocalidades.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewLocalidades.Location = new System.Drawing.Point(6, 173);
+            this.dataGridViewLocalidades.Location = new System.Drawing.Point(5, 150);
             this.dataGridViewLocalidades.Name = "dataGridViewLocalidades";
             this.dataGridViewLocalidades.RowTemplate.Height = 25;
-            this.dataGridViewLocalidades.Size = new System.Drawing.Size(587, 219);
+            this.dataGridViewLocalidades.Size = new System.Drawing.Size(503, 190);
             this.dataGridViewLocalidades.TabIndex = 0;
             this.dataGridViewLocalidades.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewProveedores_CellContentClick);
             // 
@@ -129,9 +129,9 @@ namespace TuLuzNet.ABMs
             // 
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.Location = new System.Drawing.Point(12, 426);
+            this.btnAgregar.Location = new System.Drawing.Point(10, 369);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(44, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(38, 37);
             this.btnAgregar.TabIndex = 21;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -140,9 +140,9 @@ namespace TuLuzNet.ABMs
             // 
             this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.Location = new System.Drawing.Point(113, 426);
+            this.button1.Location = new System.Drawing.Point(97, 369);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(45, 43);
+            this.button1.Size = new System.Drawing.Size(39, 37);
             this.button1.TabIndex = 24;
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
@@ -151,9 +151,9 @@ namespace TuLuzNet.ABMs
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(560, 426);
+            this.button2.Location = new System.Drawing.Point(480, 369);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 43);
+            this.button2.Size = new System.Drawing.Size(39, 37);
             this.button2.TabIndex = 25;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -162,18 +162,18 @@ namespace TuLuzNet.ABMs
             // 
             this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.Location = new System.Drawing.Point(62, 426);
+            this.btnEditar.Location = new System.Drawing.Point(53, 369);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(45, 43);
+            this.btnEditar.Size = new System.Drawing.Size(39, 37);
             this.btnEditar.TabIndex = 23;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Frm_ABM_Localidades
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(628, 481);
+            this.ClientSize = new System.Drawing.Size(538, 417);
             this.Controls.Add(this.grBoxFiltros);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.button1);

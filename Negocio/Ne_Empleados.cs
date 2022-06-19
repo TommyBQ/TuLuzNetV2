@@ -34,6 +34,15 @@ namespace TuLuzNet.Negocio
             Ec.Tabla = _BD_empleados.EjecutarSQL(Ec.Sql);
             return Ec;
         }
+        public EstructuraCombo DatosComboDoc()
+        {
+            EstructuraCombo Ec = new EstructuraCombo();
+            Ec.Display = "numDoc";
+            Ec.Value = "numDoc";
+            Ec.Sql = "SELECT " + Ec.Display + ", " + Ec.Value + " FROM [BD3K6G02_2022].[dbo].[Empleados]";
+            Ec.Tabla = _BD_empleados.EjecutarSQL(Ec.Sql);
+            return Ec;
+        }
         public DataTable RecuperarEmpleados() //Todos los empleados
         {
             string sql = "SELECT * FROM [BD3K6G02_2022].[dbo].[Empleados]";
@@ -56,7 +65,19 @@ namespace TuLuzNet.Negocio
             }
             return rtdo;
         }
-
+        public void RecargarEmpleado(Control.ControlCollection Controles, DataTable Tabla)
+        {
+            foreach (var item in Controles)
+            {
+                string TipoControl = item.GetType().Name;
+                if (TipoControl == "TextBox01")
+                {
+                    TextBox01 txt = item as TextBox01;
+                    if (txt._columna == "nombre" || txt._columna == "apellido")
+                        txt.Text = _TE.BuscarDato(Tabla, txt._columna);
+                }
+            }
+        }
         public void AltaEmpleados(Control.ControlCollection controles)//aca recibe todos los txtbox cmbbox
         {
             string sql = _TE.InsertarDatos(controles, "Empleados");

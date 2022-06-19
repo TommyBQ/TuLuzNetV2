@@ -69,5 +69,10 @@ namespace TuLuzNet.Procedimientos.Factura
         {
 
         }
+
+        private void dataGridViewFactura_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

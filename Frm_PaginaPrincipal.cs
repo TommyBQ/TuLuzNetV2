@@ -11,6 +11,8 @@ using TuLuzNet.ABMs;
 using TuLuzNet.Procedimientos.Factura;
 using TuLuzNet.Procedimientos.Cotizaciones;
 using TuLuzNet.ABMs.Pedidos;
+using TuLuzNet.Reportes.ClientesXActivo;
+using TuLuzNet.Reportes.CotizacionesXEmpleado;
 
 namespace TuLuzNet
 {
@@ -111,6 +113,20 @@ namespace TuLuzNet
             Hide();
             Frm_ABMC_Cotizaciones formABMCPedidos = new Frm_ABMC_Cotizaciones();
             formABMCPedidos.Show();
+        }
+
+        private void btnReportesXActivos_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_CliXActivo frm_Rep_CliXActivo = new Frm_Rep_CliXActivo();
+            frm_Rep_CliXActivo.Show();
+        }
+
+        private void btnCotizacionesXEmpleado_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_CotXEmpleado frm_Rep_CotXEmpleado = new Frm_Rep_CotXEmpleado();
+            frm_Rep_CotXEmpleado.Show();
         }
 
         //private void btnReportesXActivos_Click(object sender, EventArgs e)

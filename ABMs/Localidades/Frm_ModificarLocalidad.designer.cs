@@ -42,10 +42,10 @@ namespace TuLuzNet.ABMs.Localidades
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(292, 172);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnCancelar.Location = new System.Drawing.Point(250, 149);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 29);
             this.btnCancelar.TabIndex = 31;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -53,10 +53,10 @@ namespace TuLuzNet.ABMs.Localidades
             // 
             // btnModificar
             // 
-            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnModificar.Location = new System.Drawing.Point(199, 172);
+            this.btnModificar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnModificar.Location = new System.Drawing.Point(160, 149);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(87, 30);
+            this.btnModificar.Size = new System.Drawing.Size(84, 29);
             this.btnModificar.TabIndex = 30;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -65,8 +65,8 @@ namespace TuLuzNet.ABMs.Localidades
             // lblProvincia
             // 
             this.lblProvincia.AutoSize = true;
-            this.lblProvincia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblProvincia.Location = new System.Drawing.Point(12, 138);
+            this.lblProvincia.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblProvincia.Location = new System.Drawing.Point(10, 120);
             this.lblProvincia.Name = "lblProvincia";
             this.lblProvincia.Size = new System.Drawing.Size(69, 20);
             this.lblProvincia.TabIndex = 28;
@@ -75,8 +75,8 @@ namespace TuLuzNet.ABMs.Localidades
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(12, 97);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNombre.Location = new System.Drawing.Point(10, 84);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(64, 20);
             this.lblNombre.TabIndex = 26;
@@ -85,18 +85,18 @@ namespace TuLuzNet.ABMs.Localidades
             // lblAgregarBarrio
             // 
             this.lblAgregarBarrio.AutoSize = true;
-            this.lblAgregarBarrio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblAgregarBarrio.Location = new System.Drawing.Point(12, 9);
+            this.lblAgregarBarrio.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblAgregarBarrio.Location = new System.Drawing.Point(10, 8);
             this.lblAgregarBarrio.Name = "lblAgregarBarrio";
-            this.lblAgregarBarrio.Size = new System.Drawing.Size(222, 32);
+            this.lblAgregarBarrio.Size = new System.Drawing.Size(223, 32);
             this.lblAgregarBarrio.TabIndex = 25;
             this.lblAgregarBarrio.Text = "Modificar Localidad";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 56);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label1.Location = new System.Drawing.Point(10, 49);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 20);
             this.label1.TabIndex = 32;
@@ -109,9 +109,9 @@ namespace TuLuzNet.ABMs.Localidades
             this.cmb_provincias._repetible = false;
             this.cmb_provincias._Validable = true;
             this.cmb_provincias.FormattingEnabled = true;
-            this.cmb_provincias.Location = new System.Drawing.Point(108, 135);
+            this.cmb_provincias.Location = new System.Drawing.Point(109, 119);
             this.cmb_provincias.Name = "cmb_provincias";
-            this.cmb_provincias.Size = new System.Drawing.Size(142, 23);
+            this.cmb_provincias.Size = new System.Drawing.Size(122, 21);
             this.cmb_provincias.TabIndex = 34;
             // 
             // txt_localidad
@@ -120,9 +120,9 @@ namespace TuLuzNet.ABMs.Localidades
             this.txt_localidad._mensajeError = "No ingreso el ID ";
             this.txt_localidad._repetible = false;
             this.txt_localidad._validable = true;
-            this.txt_localidad.Location = new System.Drawing.Point(108, 53);
+            this.txt_localidad.Location = new System.Drawing.Point(109, 49);
             this.txt_localidad.Name = "txt_localidad";
-            this.txt_localidad.Size = new System.Drawing.Size(142, 23);
+            this.txt_localidad.Size = new System.Drawing.Size(122, 20);
             this.txt_localidad.TabIndex = 35;
             // 
             // txt_nombre
@@ -131,16 +131,16 @@ namespace TuLuzNet.ABMs.Localidades
             this.txt_nombre._mensajeError = "No ingreso el NOMBRE";
             this.txt_nombre._repetible = false;
             this.txt_nombre._validable = true;
-            this.txt_nombre.Location = new System.Drawing.Point(108, 93);
+            this.txt_nombre.Location = new System.Drawing.Point(109, 84);
             this.txt_nombre.Name = "txt_nombre";
-            this.txt_nombre.Size = new System.Drawing.Size(142, 23);
+            this.txt_nombre.Size = new System.Drawing.Size(122, 20);
             this.txt_nombre.TabIndex = 36;
             // 
             // Frm_ModificarLocalidad
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(389, 215);
+            this.ClientSize = new System.Drawing.Size(333, 186);
             this.Controls.Add(this.txt_nombre);
             this.Controls.Add(this.txt_localidad);
             this.Controls.Add(this.cmb_provincias);

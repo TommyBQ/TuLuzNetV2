@@ -71,7 +71,7 @@ namespace TuLuzNet.ABMs
                 {
                     //string x = ComboBox01.SelectedIndex.ToString();
                     this.dataGridViewEmpleados.DataSource = _NE.RecuperarEmpleados(txtBoxNombre.Text, txtBoxApellido.Text, txtBoxNumDoc.Text, cmbTipoDocumento.SelectedIndex);
-                    if (dataGridViewEmpleados.Rows.Count == 1)
+                    if (dataGridViewEmpleados.Rows.Count == 0)
                     {
                         MessageBox.Show("No se encontró ningun campo que cumpla los parámetros.", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         txtBoxApellido.Text = "";

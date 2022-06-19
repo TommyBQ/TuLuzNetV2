@@ -65,7 +65,7 @@ namespace TuLuzNet.ABMs
             this.dataGridViewClientes.DataSource = null;
             if (chkBoxActivo.Checked)
             {
-                this.dataGridViewClientes.DataSource = clientes.RecuperarTodosClientesActivo();
+                this.dataGridViewClientes.DataSource = clientes.RecuperarTodosClientesXActivo(1);
             }
             else if (chkBoxTodos.Checked)
             {

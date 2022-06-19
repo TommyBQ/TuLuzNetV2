@@ -55,9 +55,9 @@ namespace TuLuzNet.ABMs
             // 
             this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.Location = new System.Drawing.Point(655, 445);
+            this.button2.Location = new System.Drawing.Point(561, 386);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(45, 43);
+            this.button2.Size = new System.Drawing.Size(39, 37);
             this.button2.TabIndex = 10;
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
@@ -66,9 +66,9 @@ namespace TuLuzNet.ABMs
             // 
             this.btnBorrar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrar.BackgroundImage")));
             this.btnBorrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrar.Location = new System.Drawing.Point(113, 445);
+            this.btnBorrar.Location = new System.Drawing.Point(97, 386);
             this.btnBorrar.Name = "btnBorrar";
-            this.btnBorrar.Size = new System.Drawing.Size(45, 43);
+            this.btnBorrar.Size = new System.Drawing.Size(39, 37);
             this.btnBorrar.TabIndex = 9;
             this.btnBorrar.UseVisualStyleBackColor = true;
             this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click_1);
@@ -77,9 +77,9 @@ namespace TuLuzNet.ABMs
             // 
             this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
             this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnEditar.Location = new System.Drawing.Point(62, 445);
+            this.btnEditar.Location = new System.Drawing.Point(53, 386);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(45, 43);
+            this.btnEditar.Size = new System.Drawing.Size(39, 37);
             this.btnEditar.TabIndex = 8;
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -88,9 +88,9 @@ namespace TuLuzNet.ABMs
             // 
             this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
             this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregar.Location = new System.Drawing.Point(12, 445);
+            this.btnAgregar.Location = new System.Drawing.Point(10, 386);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(44, 43);
+            this.btnAgregar.Size = new System.Drawing.Size(38, 37);
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
@@ -109,9 +109,9 @@ namespace TuLuzNet.ABMs
             this.grBoxFiltros.Controls.Add(this.txtBoxApellido);
             this.grBoxFiltros.Controls.Add(this.btnBuscar);
             this.grBoxFiltros.Controls.Add(this.dataGridViewEmpleados);
-            this.grBoxFiltros.Location = new System.Drawing.Point(12, 12);
+            this.grBoxFiltros.Location = new System.Drawing.Point(10, 10);
             this.grBoxFiltros.Name = "grBoxFiltros";
-            this.grBoxFiltros.Size = new System.Drawing.Size(688, 427);
+            this.grBoxFiltros.Size = new System.Drawing.Size(590, 370);
             this.grBoxFiltros.TabIndex = 7;
             this.grBoxFiltros.TabStop = false;
             this.grBoxFiltros.Text = "Filtros";
@@ -124,18 +124,18 @@ namespace TuLuzNet.ABMs
             this.cmbTipoDocumento._repetible = false;
             this.cmbTipoDocumento._Validable = false;
             this.cmbTipoDocumento.FormattingEnabled = true;
-            this.cmbTipoDocumento.ItemHeight = 15;
-            this.cmbTipoDocumento.Location = new System.Drawing.Point(433, 91);
+            this.cmbTipoDocumento.ItemHeight = 13;
+            this.cmbTipoDocumento.Location = new System.Drawing.Point(407, 82);
             this.cmbTipoDocumento.Name = "cmbTipoDocumento";
-            this.cmbTipoDocumento.Size = new System.Drawing.Size(146, 23);
+            this.cmbTipoDocumento.Size = new System.Drawing.Size(126, 21);
             this.cmbTipoDocumento.TabIndex = 15;
             this.cmbTipoDocumento.SelectedValueChanged += new System.EventHandler(this.cmbTipoDocumento_SelectedValueChanged);
             // 
             // lblTipoDoc
             // 
             this.lblTipoDoc.AutoSize = true;
-            this.lblTipoDoc.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoDoc.Location = new System.Drawing.Point(282, 95);
+            this.lblTipoDoc.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblTipoDoc.Location = new System.Drawing.Point(259, 82);
             this.lblTipoDoc.Name = "lblTipoDoc";
             this.lblTipoDoc.Size = new System.Drawing.Size(142, 20);
             this.lblTipoDoc.TabIndex = 14;
@@ -144,8 +144,8 @@ namespace TuLuzNet.ABMs
             // lblNombre
             // 
             this.lblNombre.AutoSize = true;
-            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNombre.Location = new System.Drawing.Point(17, 95);
+            this.lblNombre.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNombre.Location = new System.Drawing.Point(15, 82);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(64, 20);
             this.lblNombre.TabIndex = 13;
@@ -153,17 +153,17 @@ namespace TuLuzNet.ABMs
             // 
             // txtBoxNombre
             // 
-            this.txtBoxNombre.Location = new System.Drawing.Point(87, 92);
+            this.txtBoxNombre.Location = new System.Drawing.Point(87, 82);
             this.txtBoxNombre.Name = "txtBoxNombre";
-            this.txtBoxNombre.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxNombre.Size = new System.Drawing.Size(163, 20);
             this.txtBoxNombre.TabIndex = 2;
             this.txtBoxNombre.Click += new System.EventHandler(this.txtBoxNombre_Click);
             // 
             // lblNumDoc
             // 
             this.lblNumDoc.AutoSize = true;
-            this.lblNumDoc.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumDoc.Location = new System.Drawing.Point(282, 64);
+            this.lblNumDoc.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNumDoc.Location = new System.Drawing.Point(256, 57);
             this.lblNumDoc.Name = "lblNumDoc";
             this.lblNumDoc.Size = new System.Drawing.Size(145, 20);
             this.lblNumDoc.TabIndex = 11;
@@ -172,8 +172,8 @@ namespace TuLuzNet.ABMs
             // chkBoxTodos
             // 
             this.chkBoxTodos.AutoSize = true;
-            this.chkBoxTodos.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.chkBoxTodos.Location = new System.Drawing.Point(87, 121);
+            this.chkBoxTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.chkBoxTodos.Location = new System.Drawing.Point(75, 105);
             this.chkBoxTodos.Name = "chkBoxTodos";
             this.chkBoxTodos.Size = new System.Drawing.Size(68, 24);
             this.chkBoxTodos.TabIndex = 5;
@@ -182,27 +182,27 @@ namespace TuLuzNet.ABMs
             // 
             // txtBoxNumDoc
             // 
-            this.txtBoxNumDoc.Location = new System.Drawing.Point(433, 61);
+            this.txtBoxNumDoc.Location = new System.Drawing.Point(407, 58);
             this.txtBoxNumDoc.Name = "txtBoxNumDoc";
-            this.txtBoxNumDoc.Size = new System.Drawing.Size(146, 23);
+            this.txtBoxNumDoc.Size = new System.Drawing.Size(126, 20);
             this.txtBoxNumDoc.TabIndex = 3;
             this.txtBoxNumDoc.Click += new System.EventHandler(this.txtBoxNumDoc_Click);
             // 
             // lblEmpleados
             // 
             this.lblEmpleados.AutoSize = true;
-            this.lblEmpleados.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblEmpleados.Location = new System.Drawing.Point(13, 18);
+            this.lblEmpleados.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblEmpleados.Location = new System.Drawing.Point(11, 16);
             this.lblEmpleados.Name = "lblEmpleados";
-            this.lblEmpleados.Size = new System.Drawing.Size(188, 32);
+            this.lblEmpleados.Size = new System.Drawing.Size(189, 32);
             this.lblEmpleados.TabIndex = 9;
             this.lblEmpleados.Text = "ABM Empleados";
             // 
             // lblApellido
             // 
             this.lblApellido.AutoSize = true;
-            this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblApellido.Location = new System.Drawing.Point(17, 66);
+            this.lblApellido.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblApellido.Location = new System.Drawing.Point(15, 57);
             this.lblApellido.Name = "lblApellido";
             this.lblApellido.Size = new System.Drawing.Size(66, 20);
             this.lblApellido.TabIndex = 6;
@@ -210,18 +210,18 @@ namespace TuLuzNet.ABMs
             // 
             // txtBoxApellido
             // 
-            this.txtBoxApellido.Location = new System.Drawing.Point(87, 62);
+            this.txtBoxApellido.Location = new System.Drawing.Point(87, 57);
             this.txtBoxApellido.Name = "txtBoxApellido";
-            this.txtBoxApellido.Size = new System.Drawing.Size(189, 23);
+            this.txtBoxApellido.Size = new System.Drawing.Size(163, 20);
             this.txtBoxApellido.TabIndex = 1;
             this.txtBoxApellido.Click += new System.EventHandler(this.txtBoxApellido_Click);
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscar.Location = new System.Drawing.Point(585, 167);
+            this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnBuscar.Location = new System.Drawing.Point(501, 142);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(97, 26);
+            this.btnBuscar.Size = new System.Drawing.Size(83, 26);
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -229,19 +229,21 @@ namespace TuLuzNet.ABMs
             // 
             // dataGridViewEmpleados
             // 
+            this.dataGridViewEmpleados.AllowUserToAddRows = false;
             this.dataGridViewEmpleados.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewEmpleados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewEmpleados.Location = new System.Drawing.Point(6, 202);
+            this.dataGridViewEmpleados.Location = new System.Drawing.Point(5, 175);
             this.dataGridViewEmpleados.Name = "dataGridViewEmpleados";
+            this.dataGridViewEmpleados.RowHeadersVisible = false;
             this.dataGridViewEmpleados.RowTemplate.Height = 25;
-            this.dataGridViewEmpleados.Size = new System.Drawing.Size(676, 219);
+            this.dataGridViewEmpleados.Size = new System.Drawing.Size(579, 190);
             this.dataGridViewEmpleados.TabIndex = 0;
             // 
             // Frm_ABM_Empleados
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(710, 496);
+            this.ClientSize = new System.Drawing.Size(609, 430);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnEditar);

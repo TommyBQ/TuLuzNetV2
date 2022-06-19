@@ -66,10 +66,10 @@ namespace TuLuzNet.ABMs.Pedidos
             // lblAgregarPedido
             // 
             this.lblAgregarPedido.AutoSize = true;
-            this.lblAgregarPedido.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point);
-            this.lblAgregarPedido.Location = new System.Drawing.Point(12, 19);
+            this.lblAgregarPedido.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Underline);
+            this.lblAgregarPedido.Location = new System.Drawing.Point(10, 16);
             this.lblAgregarPedido.Name = "lblAgregarPedido";
-            this.lblAgregarPedido.Size = new System.Drawing.Size(178, 32);
+            this.lblAgregarPedido.Size = new System.Drawing.Size(179, 32);
             this.lblAgregarPedido.TabIndex = 29;
             this.lblAgregarPedido.Text = "Agregar Pedido";
             // 
@@ -79,18 +79,18 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtTotal._mensajeError = "*";
             this.txtTotal._repetible = false;
             this.txtTotal._validable = false;
-            this.txtTotal.Location = new System.Drawing.Point(535, 341);
+            this.txtTotal.Location = new System.Drawing.Point(459, 296);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.ReadOnly = true;
-            this.txtTotal.Size = new System.Drawing.Size(199, 23);
+            this.txtTotal.Size = new System.Drawing.Size(171, 20);
             this.txtTotal.TabIndex = 178;
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCalcular.Location = new System.Drawing.Point(374, 337);
+            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnCalcular.Location = new System.Drawing.Point(321, 292);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(87, 30);
+            this.btnCalcular.Size = new System.Drawing.Size(75, 26);
             this.btnCalcular.TabIndex = 179;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -99,8 +99,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label11.Location = new System.Drawing.Point(485, 342);
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label11.Location = new System.Drawing.Point(416, 296);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(45, 20);
             this.label11.TabIndex = 177;
@@ -109,8 +109,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(586, 53);
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label12.Location = new System.Drawing.Point(502, 46);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 20);
             this.label12.TabIndex = 176;
@@ -119,8 +119,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(374, 52);
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label10.Location = new System.Drawing.Point(321, 45);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(69, 20);
             this.label10.TabIndex = 175;
@@ -132,9 +132,9 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtCantidad._mensajeError = "No seleccionó la cantidad";
             this.txtCantidad._repetible = false;
             this.txtCantidad._validable = false;
-            this.txtCantidad.Location = new System.Drawing.Point(666, 52);
+            this.txtCantidad.Location = new System.Drawing.Point(571, 45);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(49, 23);
+            this.txtCantidad.Size = new System.Drawing.Size(43, 20);
             this.txtCantidad.TabIndex = 174;
             // 
             // cmbProducto
@@ -144,18 +144,18 @@ namespace TuLuzNet.ABMs.Pedidos
             this.cmbProducto._repetible = false;
             this.cmbProducto._Validable = false;
             this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(459, 52);
+            this.cmbProducto.Location = new System.Drawing.Point(393, 45);
             this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(121, 23);
+            this.cmbProducto.Size = new System.Drawing.Size(104, 21);
             this.cmbProducto.TabIndex = 173;
             // 
             // btnAgregarDetallePed
             // 
             this.btnAgregarDetallePed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarDetallePed.BackgroundImage")));
             this.btnAgregarDetallePed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregarDetallePed.Location = new System.Drawing.Point(739, 42);
+            this.btnAgregarDetallePed.Location = new System.Drawing.Point(633, 36);
             this.btnAgregarDetallePed.Name = "btnAgregarDetallePed";
-            this.btnAgregarDetallePed.Size = new System.Drawing.Size(45, 43);
+            this.btnAgregarDetallePed.Size = new System.Drawing.Size(39, 37);
             this.btnAgregarDetallePed.TabIndex = 171;
             this.btnAgregarDetallePed.UseVisualStyleBackColor = true;
             this.btnAgregarDetallePed.Click += new System.EventHandler(this.btnAgregarDetallePed_Click);
@@ -164,9 +164,9 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             this.btnBorrarDetallePed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrarDetallePed.BackgroundImage")));
             this.btnBorrarDetallePed.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrarDetallePed.Location = new System.Drawing.Point(739, 91);
+            this.btnBorrarDetallePed.Location = new System.Drawing.Point(633, 79);
             this.btnBorrarDetallePed.Name = "btnBorrarDetallePed";
-            this.btnBorrarDetallePed.Size = new System.Drawing.Size(45, 43);
+            this.btnBorrarDetallePed.Size = new System.Drawing.Size(39, 37);
             this.btnBorrarDetallePed.TabIndex = 172;
             this.btnBorrarDetallePed.UseVisualStyleBackColor = true;
             this.btnBorrarDetallePed.Click += new System.EventHandler(this.btnBorrarDetallePed_Click);
@@ -175,11 +175,11 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             this.dataGridViewDetallePed.AllowUserToAddRows = false;
             this.dataGridViewDetallePed.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewDetallePed.Location = new System.Drawing.Point(374, 91);
+            this.dataGridViewDetallePed.Location = new System.Drawing.Point(321, 79);
             this.dataGridViewDetallePed.Name = "dataGridViewDetallePed";
             this.dataGridViewDetallePed.RowHeadersVisible = false;
             this.dataGridViewDetallePed.RowTemplate.Height = 25;
-            this.dataGridViewDetallePed.Size = new System.Drawing.Size(360, 240);
+            this.dataGridViewDetallePed.Size = new System.Drawing.Size(309, 208);
             this.dataGridViewDetallePed.TabIndex = 170;
             // 
             // txtCondPago
@@ -188,9 +188,9 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtCondPago._mensajeError = "Falta condicion PAGO!";
             this.txtCondPago._repetible = false;
             this.txtCondPago._validable = true;
-            this.txtCondPago.Location = new System.Drawing.Point(176, 75);
+            this.txtCondPago.Location = new System.Drawing.Point(151, 65);
             this.txtCondPago.Name = "txtCondPago";
-            this.txtCondPago.Size = new System.Drawing.Size(122, 23);
+            this.txtCondPago.Size = new System.Drawing.Size(105, 20);
             this.txtCondPago.TabIndex = 169;
             // 
             // cmbCuitCliente
@@ -200,9 +200,9 @@ namespace TuLuzNet.ABMs.Pedidos
             this.cmbCuitCliente._repetible = false;
             this.cmbCuitCliente._Validable = true;
             this.cmbCuitCliente.FormattingEnabled = true;
-            this.cmbCuitCliente.Location = new System.Drawing.Point(156, 280);
+            this.cmbCuitCliente.Location = new System.Drawing.Point(134, 243);
             this.cmbCuitCliente.Name = "cmbCuitCliente";
-            this.cmbCuitCliente.Size = new System.Drawing.Size(142, 23);
+            this.cmbCuitCliente.Size = new System.Drawing.Size(122, 21);
             this.cmbCuitCliente.TabIndex = 168;
             // 
             // dtpFecha
@@ -213,16 +213,16 @@ namespace TuLuzNet.ABMs.Pedidos
             this.dtpFecha._validable = true;
             this.dtpFecha.CustomFormat = "dd MMMM yyyy";
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFecha.Location = new System.Drawing.Point(156, 116);
+            this.dtpFecha.Location = new System.Drawing.Point(134, 101);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(142, 23);
+            this.dtpFecha.Size = new System.Drawing.Size(122, 20);
             this.dtpFecha.TabIndex = 167;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(24, 115);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label5.Location = new System.Drawing.Point(21, 100);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(47, 20);
             this.label5.TabIndex = 166;
@@ -230,10 +230,10 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCancelar.Location = new System.Drawing.Point(704, 387);
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnCancelar.Location = new System.Drawing.Point(603, 335);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(87, 30);
+            this.btnCancelar.Size = new System.Drawing.Size(75, 29);
             this.btnCancelar.TabIndex = 165;
             this.btnCancelar.Text = "Cerrar";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -241,10 +241,10 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             // btnAgregarPedido
             // 
-            this.btnAgregarPedido.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAgregarPedido.Location = new System.Drawing.Point(611, 387);
+            this.btnAgregarPedido.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnAgregarPedido.Location = new System.Drawing.Point(524, 335);
             this.btnAgregarPedido.Name = "btnAgregarPedido";
-            this.btnAgregarPedido.Size = new System.Drawing.Size(87, 30);
+            this.btnAgregarPedido.Size = new System.Drawing.Size(75, 29);
             this.btnAgregarPedido.TabIndex = 164;
             this.btnAgregarPedido.Text = "Agregar";
             this.btnAgregarPedido.UseVisualStyleBackColor = true;
@@ -253,8 +253,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // lblCuitCliente
             // 
             this.lblCuitCliente.AutoSize = true;
-            this.lblCuitCliente.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCuitCliente.Location = new System.Drawing.Point(24, 279);
+            this.lblCuitCliente.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblCuitCliente.Location = new System.Drawing.Point(21, 242);
             this.lblCuitCliente.Name = "lblCuitCliente";
             this.lblCuitCliente.Size = new System.Drawing.Size(90, 20);
             this.lblCuitCliente.TabIndex = 163;
@@ -263,8 +263,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // lblCondicionPago
             // 
             this.lblCondicionPago.AutoSize = true;
-            this.lblCondicionPago.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCondicionPago.Location = new System.Drawing.Point(23, 74);
+            this.lblCondicionPago.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblCondicionPago.Location = new System.Drawing.Point(20, 64);
             this.lblCondicionPago.Name = "lblCondicionPago";
             this.lblCondicionPago.Size = new System.Drawing.Size(134, 20);
             this.lblCondicionPago.TabIndex = 162;
@@ -277,9 +277,9 @@ namespace TuLuzNet.ABMs.Pedidos
             this.cmbTDVendedor._repetible = false;
             this.cmbTDVendedor._Validable = false;
             this.cmbTDVendedor.FormattingEnabled = true;
-            this.cmbTDVendedor.Location = new System.Drawing.Point(185, 321);
+            this.cmbTDVendedor.Location = new System.Drawing.Point(159, 278);
             this.cmbTDVendedor.Name = "cmbTDVendedor";
-            this.cmbTDVendedor.Size = new System.Drawing.Size(113, 23);
+            this.cmbTDVendedor.Size = new System.Drawing.Size(97, 21);
             this.cmbTDVendedor.TabIndex = 161;
             // 
             // txtDocVendedor
@@ -288,16 +288,16 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtDocVendedor._mensajeError = "Hay un campo vacio";
             this.txtDocVendedor._repetible = true;
             this.txtDocVendedor._validable = true;
-            this.txtDocVendedor.Location = new System.Drawing.Point(156, 361);
+            this.txtDocVendedor.Location = new System.Drawing.Point(134, 313);
             this.txtDocVendedor.Name = "txtDocVendedor";
-            this.txtDocVendedor.Size = new System.Drawing.Size(142, 23);
+            this.txtDocVendedor.Size = new System.Drawing.Size(122, 20);
             this.txtDocVendedor.TabIndex = 160;
             // 
             // lblTipoDocVendedor
             // 
             this.lblTipoDocVendedor.AutoSize = true;
-            this.lblTipoDocVendedor.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblTipoDocVendedor.Location = new System.Drawing.Point(24, 320);
+            this.lblTipoDocVendedor.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblTipoDocVendedor.Location = new System.Drawing.Point(21, 277);
             this.lblTipoDocVendedor.Name = "lblTipoDocVendedor";
             this.lblTipoDocVendedor.Size = new System.Drawing.Size(141, 20);
             this.lblTipoDocVendedor.TabIndex = 159;
@@ -306,8 +306,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // lblNumDocVendedor
             // 
             this.lblNumDocVendedor.AutoSize = true;
-            this.lblNumDocVendedor.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumDocVendedor.Location = new System.Drawing.Point(23, 361);
+            this.lblNumDocVendedor.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNumDocVendedor.Location = new System.Drawing.Point(20, 313);
             this.lblNumDocVendedor.Name = "lblNumDocVendedor";
             this.lblNumDocVendedor.Size = new System.Drawing.Size(107, 20);
             this.lblNumDocVendedor.TabIndex = 158;
@@ -319,16 +319,16 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtAñoCotizacion._mensajeError = "Hay un campo vacio";
             this.txtAñoCotizacion._repetible = true;
             this.txtAñoCotizacion._validable = true;
-            this.txtAñoCotizacion.Location = new System.Drawing.Point(156, 239);
+            this.txtAñoCotizacion.Location = new System.Drawing.Point(134, 207);
             this.txtAñoCotizacion.Name = "txtAñoCotizacion";
-            this.txtAñoCotizacion.Size = new System.Drawing.Size(142, 23);
+            this.txtAñoCotizacion.Size = new System.Drawing.Size(122, 20);
             this.txtAñoCotizacion.TabIndex = 157;
             // 
             // lblAñoCotizacion
             // 
             this.lblAñoCotizacion.AutoSize = true;
-            this.lblAñoCotizacion.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblAñoCotizacion.Location = new System.Drawing.Point(24, 238);
+            this.lblAñoCotizacion.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblAñoCotizacion.Location = new System.Drawing.Point(21, 206);
             this.lblAñoCotizacion.Name = "lblAñoCotizacion";
             this.lblAñoCotizacion.Size = new System.Drawing.Size(110, 20);
             this.lblAñoCotizacion.TabIndex = 156;
@@ -340,9 +340,9 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtNumCotizacion._mensajeError = "Hay un campo vacio";
             this.txtNumCotizacion._repetible = true;
             this.txtNumCotizacion._validable = true;
-            this.txtNumCotizacion.Location = new System.Drawing.Point(156, 198);
+            this.txtNumCotizacion.Location = new System.Drawing.Point(134, 172);
             this.txtNumCotizacion.Name = "txtNumCotizacion";
-            this.txtNumCotizacion.Size = new System.Drawing.Size(142, 23);
+            this.txtNumCotizacion.Size = new System.Drawing.Size(122, 20);
             this.txtNumCotizacion.TabIndex = 155;
             // 
             // txtNumPedido
@@ -351,17 +351,17 @@ namespace TuLuzNet.ABMs.Pedidos
             this.txtNumPedido._mensajeError = "Hay un campo vacio";
             this.txtNumPedido._repetible = true;
             this.txtNumPedido._validable = true;
-            this.txtNumPedido.Location = new System.Drawing.Point(156, 157);
+            this.txtNumPedido.Location = new System.Drawing.Point(134, 136);
             this.txtNumPedido.Name = "txtNumPedido";
             this.txtNumPedido.ReadOnly = true;
-            this.txtNumPedido.Size = new System.Drawing.Size(142, 23);
+            this.txtNumPedido.Size = new System.Drawing.Size(122, 20);
             this.txtNumPedido.TabIndex = 154;
             // 
             // lblNumCotizacion
             // 
             this.lblNumCotizacion.AutoSize = true;
-            this.lblNumCotizacion.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumCotizacion.Location = new System.Drawing.Point(24, 197);
+            this.lblNumCotizacion.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNumCotizacion.Location = new System.Drawing.Point(21, 171);
             this.lblNumCotizacion.Name = "lblNumCotizacion";
             this.lblNumCotizacion.Size = new System.Drawing.Size(111, 20);
             this.lblNumCotizacion.TabIndex = 153;
@@ -370,8 +370,8 @@ namespace TuLuzNet.ABMs.Pedidos
             // lblNumPedido
             // 
             this.lblNumPedido.AutoSize = true;
-            this.lblNumPedido.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblNumPedido.Location = new System.Drawing.Point(24, 156);
+            this.lblNumPedido.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.lblNumPedido.Location = new System.Drawing.Point(21, 135);
             this.lblNumPedido.Name = "lblNumPedido";
             this.lblNumPedido.Size = new System.Drawing.Size(87, 20);
             this.lblNumPedido.TabIndex = 152;
@@ -379,10 +379,10 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             // btnCargarCotizacion
             // 
-            this.btnCargarCotizacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCargarCotizacion.Location = new System.Drawing.Point(311, 198);
+            this.btnCargarCotizacion.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
+            this.btnCargarCotizacion.Location = new System.Drawing.Point(262, 172);
             this.btnCargarCotizacion.Name = "btnCargarCotizacion";
-            this.btnCargarCotizacion.Size = new System.Drawing.Size(53, 64);
+            this.btnCargarCotizacion.Size = new System.Drawing.Size(53, 55);
             this.btnCargarCotizacion.TabIndex = 180;
             this.btnCargarCotizacion.Text = "---->";
             this.btnCargarCotizacion.UseVisualStyleBackColor = true;
@@ -390,9 +390,9 @@ namespace TuLuzNet.ABMs.Pedidos
             // 
             // Frm_Alta_Pedidos
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(803, 429);
+            this.ClientSize = new System.Drawing.Size(688, 372);
             this.Controls.Add(this.btnCargarCotizacion);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.btnCalcular);
