@@ -98,6 +98,12 @@ namespace TuLuzNet.Negocio
         {
             string sql = "SELECT * FROM [BD3K6G02_2022].[dbo].[Cotizaciones] WHERE numeroCotizacion = '" + numero + "'";
             return _BD_cotizaciones.EjecutarSQL(sql);
+        }        
+        
+        public DataTable RecuperarCotizacionXPrecio(string min, string max)
+        {
+            string sql = "SELECT C.[numeroCotizacion],C.[año],C.[cuitCliente],C.[numDocVendedor],EC.[descripcion],C.[nombreCliente],C.[apellidoCliente],C.[fecha],C.[observaciones],C.[precioTotal],C.[motivoPerdida] FROM [BD3K6G02_2022].[dbo].[Cotizaciones] C JOIN EstadosCotizaciones EC ON C.codEstadoCotizacion = EC.codEstado WHERE C.precioTotal BETWEEN " + min + " AND " + max;
+            return _BD_cotizaciones.EjecutarSQL(sql);
         }
 
         public void RecargarCliente(Control.ControlCollection Controles, DataTable Tabla)

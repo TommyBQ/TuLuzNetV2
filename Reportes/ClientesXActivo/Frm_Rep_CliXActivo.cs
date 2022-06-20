@@ -42,6 +42,7 @@ namespace TuLuzNet.Reportes.ClientesXActivo
             }
             else
             {
+                MessageBox.Show("No se seleccionaron parámetros de búsqueda!");
                 return;
             }
 
