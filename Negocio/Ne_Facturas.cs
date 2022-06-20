@@ -16,11 +16,13 @@ namespace TuLuzNet.Negocio
         TratamientosEspeciales _TE = new TratamientosEspeciales();
 
         public int numeroFactura { get; set; }
+
+        public int numeroDetFactura { get; set; }
         public DateTime fecha { get; set; }
-        public char tipoFactura { get; set; }
+        public string tipoFactura { get; set; }
         public int numDocEmpleado { get; set; }
         public string cuil { get; set; }
-        public bool activo { get; set; }
+        public int activo { get; set; }
 
         public DataTable RecuperarFacturas()
         {
@@ -51,6 +53,91 @@ namespace TuLuzNet.Negocio
             }
             else
                 MessageBox.Show("No se cargó la Factura.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        private string BuscarDato(DataTable Tabla, String Columna)
+        {
+            for (int i = 0; i < Tabla.Columns.Count; i++)
+            {
+                if (Tabla.Columns[i].Caption.ToUpper() == Columna.Trim().ToUpper())
+                {
+                    return Tabla.Rows[0][i].ToString();
+                }
+            }
+            return "";
+        }
+        internal void Grabar(DataGridView grilla)
+        {
+            string sql = "INSERT [BD3K6G02_2022].[dbo].[Factura] (numeroFactura, fecha, tipoFactura, numDocEmpleado, cuilCuit, activo) VALUES (";
+            sql += this.numeroFactura + ", ";
+            sql += "CONVERT (date, '" + this.fecha + "', 103)" + ", ";
+            sql += this.tipoFactura + ", ";
+            sql += this.numDocEmpleado + ", ";
+            sql += this.cuil + ", ";
+            sql += this.activo + "";
+            sql += "); ";
+            foreach (DataGridViewRow fila in grilla.Rows)
+            {
+                sql += "INSERT [BD3K6G02_2022].[dbo].[DetalleFactura] (numeroDetalleFactura, numFactura,codProducto, cantidad, precioUnitario) VALUES (";
+                sql += this.numeroDetFactura;
+                sql += this.numeroFactura;
+                sql += ", " + fila.Cells[0].Value;
+                sql += ", " + fila.Cells[1].Value;
+                sql += ", " + fila.Cells[2].Value.ToString().Replace(",", ".") + "); ";
+            }
+
+            if (_BD_Facturas.Insertar(sql) == BD_acceso_a_datos.TipoEstado.correcto)
+            {
+                MessageBox.Show("Se modifico correctamente");
+            }
+            else
+            {
+                MessageBox.Show("No se modifico, hubo error", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        public int obtenerNumDetFactura()
+        {
+            int numero = 1;
+            try
+            {
+                DataTable rtdo = new DataTable();
+                //SELECT MAX(numeroDetalleFactura) as numeroDetalleFactura FROM[BD3K6G02_2022].[dbo].[DetalleFactura]
+                string sql = "SELECT MAX(numeroDetalleFactura) as numeroDetalleFactura FROM [BD3K6G02_2022].[dbo].[DetalleFactura]";
+                rtdo = _BD_Facturas.EjecutarSQL(sql);
+                numero = Int32.Parse(BuscarDato(rtdo, "numeroDetalleFactura"));
+            }
+            catch
+            {
+                return numero;
+            }
+            return numero + 1;
+        }
+
+        public int obtenerNumFactura()
+        {
+            int numero = 1;
+            try
+            {
+                DataTable rtdo = new DataTable();
+                //SELECT MAX(numeroFactura) as numeroFactura FROM[BD3K6G02_2022].[dbo].[Factura]
+                string sql = "SELECT MAX(numeroFactura) as numeroFactura FROM [BD3K6G02_2022].[dbo].[Factura]";
+                rtdo = _BD_Facturas.EjecutarSQL(sql);
+                numero = Int32.Parse(BuscarDato(rtdo, "numeroFactura"));
+            }
+            catch
+            {
+                return numero;
+            }
+            return numero + 1;
+        }
+
+        public double PrecioProducto(string producto)
+        {
+            DataTable rtdo = new DataTable();
+            string sql = "SELECT precio FROM [BD3K6G02_2022].[dbo].[Productos] " +
+                            "WHERE codProducto = " + producto;
+            rtdo = _BD_Facturas.EjecutarSQL(sql);
+            return Convert.ToDouble(BuscarDato(rtdo, "precio"));
         }
 
         public void Modificar()

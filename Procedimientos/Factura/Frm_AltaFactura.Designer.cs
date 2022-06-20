@@ -31,15 +31,6 @@ namespace TuLuzNet.Procedimientos.Factura
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_AltaFactura));
             this.lblAgregarBarrio = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.btnBuscarTodos = new System.Windows.Forms.Button();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.txtCantidad = new TuLuzNet.Clases.TextBox01();
-            this.cmbProducto = new TuLuzNet.Clases.ComboBox01();
-            this.btnBorrarDetalleFac = new System.Windows.Forms.Button();
-            this.btnAgregarDetalleFac = new System.Windows.Forms.Button();
-            this.dataGridViewDetalleFac = new TuLuzNet.Clases.Grid01();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnCargar = new System.Windows.Forms.Button();
             this.dtpFecha = new TuLuzNet.Clases.DateTimePicker01();
@@ -53,7 +44,18 @@ namespace TuLuzNet.Procedimientos.Factura
             this.label3 = new System.Windows.Forms.Label();
             this.chk_Activo = new TuLuzNet.Clases.CheckBox01();
             this.cmb_docEmpleados = new TuLuzNet.Clases.ComboBox01();
-            this.groupBox2.SuspendLayout();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.txtCantidad = new TuLuzNet.Clases.TextBox01();
+            this.cmbProducto = new TuLuzNet.Clases.ComboBox01();
+            this.btnAgregarDetalleCot = new System.Windows.Forms.Button();
+            this.btnBorrarDetalleCot = new System.Windows.Forms.Button();
+            this.dataGridViewDetalleFac = new TuLuzNet.Clases.Grid01();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtTotal = new TuLuzNet.Clases.TextBox01();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txtNumDetalleFactura = new TuLuzNet.Clases.TextBox01();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetalleFac)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,123 +70,10 @@ namespace TuLuzNet.Procedimientos.Factura
             this.lblAgregarBarrio.TabIndex = 11;
             this.lblAgregarBarrio.Text = "Cargar Factura";
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.btnBuscarTodos);
-            this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.txtCantidad);
-            this.groupBox2.Controls.Add(this.cmbProducto);
-            this.groupBox2.Controls.Add(this.btnBorrarDetalleFac);
-            this.groupBox2.Controls.Add(this.btnAgregarDetalleFac);
-            this.groupBox2.Controls.Add(this.dataGridViewDetalleFac);
-            this.groupBox2.Location = new System.Drawing.Point(468, 52);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(433, 416);
-            this.groupBox2.TabIndex = 41;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Detalles Factura";
-            // 
-            // btnBuscarTodos
-            // 
-            this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnBuscarTodos.Location = new System.Drawing.Point(281, 82);
-            this.btnBuscarTodos.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBuscarTodos.Name = "btnBuscarTodos";
-            this.btnBuscarTodos.Size = new System.Drawing.Size(144, 33);
-            this.btnBuscarTodos.TabIndex = 42;
-            this.btnBuscarTodos.Text = "Buscar Todos";
-            this.btnBuscarTodos.UseVisualStyleBackColor = true;
-            this.btnBuscarTodos.Click += new System.EventHandler(this.btnBuscarTodos_Click);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label12.Location = new System.Drawing.Point(8, 66);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 25);
-            this.label12.TabIndex = 143;
-            this.label12.Text = "Cantidad";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label10.Location = new System.Drawing.Point(8, 26);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 25);
-            this.label10.TabIndex = 142;
-            this.label10.Text = "Producto";
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad._columna = null;
-            this.txtCantidad._mensajeError = "No seleccionó la cantidad";
-            this.txtCantidad._repetible = false;
-            this.txtCantidad._validable = true;
-            this.txtCantidad.Location = new System.Drawing.Point(111, 66);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(137, 22);
-            this.txtCantidad.TabIndex = 141;
-            // 
-            // cmbProducto
-            // 
-            this.cmbProducto._columna = "nombre";
-            this.cmbProducto._MensajeError = "No seleccionó Producto";
-            this.cmbProducto._repetible = false;
-            this.cmbProducto._Validable = true;
-            this.cmbProducto.FormattingEnabled = true;
-            this.cmbProducto.Location = new System.Drawing.Point(111, 26);
-            this.cmbProducto.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbProducto.Name = "cmbProducto";
-            this.cmbProducto.Size = new System.Drawing.Size(137, 24);
-            this.cmbProducto.TabIndex = 140;
-            // 
-            // btnBorrarDetalleFac
-            // 
-            this.btnBorrarDetalleFac.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrarDetalleFac.BackgroundImage")));
-            this.btnBorrarDetalleFac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrarDetalleFac.Location = new System.Drawing.Point(373, 14);
-            this.btnBorrarDetalleFac.Margin = new System.Windows.Forms.Padding(4);
-            this.btnBorrarDetalleFac.Name = "btnBorrarDetalleFac";
-            this.btnBorrarDetalleFac.Size = new System.Drawing.Size(52, 46);
-            this.btnBorrarDetalleFac.TabIndex = 41;
-            this.btnBorrarDetalleFac.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregarDetalleFac
-            // 
-            this.btnAgregarDetalleFac.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarDetalleFac.BackgroundImage")));
-            this.btnAgregarDetalleFac.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnAgregarDetalleFac.Location = new System.Drawing.Point(306, 14);
-            this.btnAgregarDetalleFac.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAgregarDetalleFac.Name = "btnAgregarDetalleFac";
-            this.btnAgregarDetalleFac.Size = new System.Drawing.Size(51, 46);
-            this.btnAgregarDetalleFac.TabIndex = 40;
-            this.btnAgregarDetalleFac.UseVisualStyleBackColor = true;
-            this.btnAgregarDetalleFac.Click += new System.EventHandler(this.btnAgregarDetalleFac_Click);
-            // 
-            // dataGridViewDetalleFac
-            // 
-            this.dataGridViewDetalleFac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewDetalleFac.Location = new System.Drawing.Point(8, 126);
-            this.dataGridViewDetalleFac.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewDetalleFac.Name = "dataGridViewDetalleFac";
-            this.dataGridViewDetalleFac.RowHeadersWidth = 51;
-            this.dataGridViewDetalleFac.RowTemplate.Height = 25;
-            this.dataGridViewDetalleFac.Size = new System.Drawing.Size(422, 281);
-            this.dataGridViewDetalleFac.TabIndex = 0;
-            this.dataGridViewDetalleFac.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grid011_CellContentClick);
-            // 
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnCancelar.Location = new System.Drawing.Point(801, 471);
+            this.btnCancelar.Location = new System.Drawing.Point(831, 375);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(100, 34);
@@ -196,7 +85,7 @@ namespace TuLuzNet.Procedimientos.Factura
             // btnCargar
             // 
             this.btnCargar.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnCargar.Location = new System.Drawing.Point(695, 471);
+            this.btnCargar.Location = new System.Drawing.Point(723, 377);
             this.btnCargar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCargar.Name = "btnCargar";
             this.btnCargar.Size = new System.Drawing.Size(100, 34);
@@ -236,12 +125,13 @@ namespace TuLuzNet.Procedimientos.Factura
             this.txtNumFactura._columna = "numeroFactura";
             this.txtNumFactura._mensajeError = "No cargó N° Factura.";
             this.txtNumFactura._repetible = false;
-            this.txtNumFactura._validable = true;
+            this.txtNumFactura._validable = false;
             this.txtNumFactura.Location = new System.Drawing.Point(164, 83);
             this.txtNumFactura.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumFactura.Name = "txtNumFactura";
             this.txtNumFactura.Size = new System.Drawing.Size(259, 22);
             this.txtNumFactura.TabIndex = 171;
+            this.txtNumFactura.TextChanged += new System.EventHandler(this.txtNumFactura_TextChanged);
             // 
             // lblNombre
             // 
@@ -316,7 +206,7 @@ namespace TuLuzNet.Procedimientos.Factura
             this.chk_Activo._mensajeError = "No selecciono Estado";
             this.chk_Activo._validable = true;
             this.chk_Activo.AutoSize = true;
-            this.chk_Activo.Location = new System.Drawing.Point(164, 296);
+            this.chk_Activo.Location = new System.Drawing.Point(20, 305);
             this.chk_Activo.Name = "chk_Activo";
             this.chk_Activo.Size = new System.Drawing.Size(68, 21);
             this.chk_Activo.TabIndex = 180;
@@ -335,11 +225,166 @@ namespace TuLuzNet.Procedimientos.Factura
             this.cmb_docEmpleados.Size = new System.Drawing.Size(160, 24);
             this.cmb_docEmpleados.TabIndex = 181;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label12.Location = new System.Drawing.Point(598, 57);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(88, 25);
+            this.label12.TabIndex = 188;
+            this.label12.Text = "Cantidad";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label10.Location = new System.Drawing.Point(608, 23);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(89, 25);
+            this.label10.TabIndex = 187;
+            this.label10.Text = "Producto";
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad._columna = null;
+            this.txtCantidad._mensajeError = "No seleccionó la cantidad";
+            this.txtCantidad._repetible = false;
+            this.txtCantidad._validable = true;
+            this.txtCantidad.Location = new System.Drawing.Point(716, 61);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(137, 22);
+            this.txtCantidad.TabIndex = 186;
+            // 
+            // cmbProducto
+            // 
+            this.cmbProducto._columna = "nombre";
+            this.cmbProducto._MensajeError = "No seleccionó Producto";
+            this.cmbProducto._repetible = false;
+            this.cmbProducto._Validable = true;
+            this.cmbProducto.FormattingEnabled = true;
+            this.cmbProducto.Location = new System.Drawing.Point(716, 23);
+            this.cmbProducto.Margin = new System.Windows.Forms.Padding(4);
+            this.cmbProducto.Name = "cmbProducto";
+            this.cmbProducto.Size = new System.Drawing.Size(137, 24);
+            this.cmbProducto.TabIndex = 185;
+            // 
+            // btnAgregarDetalleCot
+            // 
+            this.btnAgregarDetalleCot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregarDetalleCot.BackgroundImage")));
+            this.btnAgregarDetalleCot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnAgregarDetalleCot.Location = new System.Drawing.Point(879, 24);
+            this.btnAgregarDetalleCot.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAgregarDetalleCot.Name = "btnAgregarDetalleCot";
+            this.btnAgregarDetalleCot.Size = new System.Drawing.Size(51, 46);
+            this.btnAgregarDetalleCot.TabIndex = 183;
+            this.btnAgregarDetalleCot.UseVisualStyleBackColor = true;
+            this.btnAgregarDetalleCot.Click += new System.EventHandler(this.btnAgregarDetalleCot_Click);
+            // 
+            // btnBorrarDetalleCot
+            // 
+            this.btnBorrarDetalleCot.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrarDetalleCot.BackgroundImage")));
+            this.btnBorrarDetalleCot.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnBorrarDetalleCot.Location = new System.Drawing.Point(879, 78);
+            this.btnBorrarDetalleCot.Margin = new System.Windows.Forms.Padding(4);
+            this.btnBorrarDetalleCot.Name = "btnBorrarDetalleCot";
+            this.btnBorrarDetalleCot.Size = new System.Drawing.Size(52, 46);
+            this.btnBorrarDetalleCot.TabIndex = 184;
+            this.btnBorrarDetalleCot.UseVisualStyleBackColor = true;
+            this.btnBorrarDetalleCot.Click += new System.EventHandler(this.btnBorrarDetalleCot_Click);
+            // 
+            // dataGridViewDetalleFac
+            // 
+            this.dataGridViewDetalleFac.AllowUserToAddRows = false;
+            this.dataGridViewDetalleFac.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridViewDetalleFac.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewDetalleFac.Location = new System.Drawing.Point(538, 135);
+            this.dataGridViewDetalleFac.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridViewDetalleFac.Name = "dataGridViewDetalleFac";
+            this.dataGridViewDetalleFac.RowHeadersVisible = false;
+            this.dataGridViewDetalleFac.RowHeadersWidth = 51;
+            this.dataGridViewDetalleFac.RowTemplate.Height = 25;
+            this.dataGridViewDetalleFac.Size = new System.Drawing.Size(395, 234);
+            this.dataGridViewDetalleFac.TabIndex = 182;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnCalcular.Location = new System.Drawing.Point(20, 372);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(100, 32);
+            this.btnCalcular.TabIndex = 189;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtTotal
+            // 
+            this.txtTotal._columna = "precioTotal";
+            this.txtTotal._mensajeError = "Total calculable MAL ERROR";
+            this.txtTotal._repetible = false;
+            this.txtTotal._validable = true;
+            this.txtTotal.Location = new System.Drawing.Point(252, 375);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.ReadOnly = true;
+            this.txtTotal.Size = new System.Drawing.Size(161, 22);
+            this.txtTotal.TabIndex = 191;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label11.Location = new System.Drawing.Point(159, 375);
+            this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(56, 25);
+            this.label11.TabIndex = 190;
+            this.label11.Text = "Total:";
+            // 
+            // txtNumDetalleFactura
+            // 
+            this.txtNumDetalleFactura._columna = "numeroDetalleFactura";
+            this.txtNumDetalleFactura._mensajeError = "No ingreso el numero de detalle de factura";
+            this.txtNumDetalleFactura._repetible = false;
+            this.txtNumDetalleFactura._validable = true;
+            this.txtNumDetalleFactura.Location = new System.Drawing.Point(716, 101);
+            this.txtNumDetalleFactura.Name = "txtNumDetalleFactura";
+            this.txtNumDetalleFactura.Size = new System.Drawing.Size(137, 22);
+            this.txtNumDetalleFactura.TabIndex = 192;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.label5.Location = new System.Drawing.Point(486, 97);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(211, 25);
+            this.label5.TabIndex = 193;
+            this.label5.Text = "Numero Detalle Factura";
+            // 
             // Frm_AltaFactura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(911, 512);
+            this.ClientSize = new System.Drawing.Size(946, 417);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.txtNumDetalleFactura);
+            this.Controls.Add(this.btnCalcular);
+            this.Controls.Add(this.txtTotal);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.cmbProducto);
+            this.Controls.Add(this.btnAgregarDetalleCot);
+            this.Controls.Add(this.btnBorrarDetalleCot);
+            this.Controls.Add(this.dataGridViewDetalleFac);
             this.Controls.Add(this.cmb_docEmpleados);
             this.Controls.Add(this.chk_Activo);
             this.Controls.Add(this.dtpFecha);
@@ -353,14 +398,11 @@ namespace TuLuzNet.Procedimientos.Factura
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnCargar);
-            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.lblAgregarBarrio);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Frm_AltaFactura";
             this.Text = "Cargar Factura";
             this.Load += new System.EventHandler(this.Frm_AltaFactura_Load);
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewDetalleFac)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -370,17 +412,8 @@ namespace TuLuzNet.Procedimientos.Factura
         #endregion
 
         private System.Windows.Forms.Label lblAgregarBarrio;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private Clases.Grid01 dataGridViewDetalleFac;
-        private System.Windows.Forms.Button btnAgregarDetalleFac;
-        private System.Windows.Forms.Button btnBorrarDetalleFac;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnCargar;
-        private System.Windows.Forms.Button btnBuscarTodos;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label10;
-        private Clases.TextBox01 txtCantidad;
-        private Clases.ComboBox01 cmbProducto;
         private Clases.DateTimePicker01 dtpFecha;
         private Clases.TextBox01 txtCuilCuit;
         private Clases.TextBox01 txtNumFactura;
@@ -392,5 +425,17 @@ namespace TuLuzNet.Procedimientos.Factura
         private System.Windows.Forms.Label label3;
         private Clases.CheckBox01 chk_Activo;
         private Clases.ComboBox01 cmb_docEmpleados;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private Clases.TextBox01 txtCantidad;
+        private Clases.ComboBox01 cmbProducto;
+        private System.Windows.Forms.Button btnAgregarDetalleCot;
+        private System.Windows.Forms.Button btnBorrarDetalleCot;
+        private Clases.Grid01 dataGridViewDetalleFac;
+        private System.Windows.Forms.Button btnCalcular;
+        private Clases.TextBox01 txtTotal;
+        private System.Windows.Forms.Label label11;
+        private Clases.TextBox01 txtNumDetalleFactura;
+        private System.Windows.Forms.Label label5;
     }
 }
