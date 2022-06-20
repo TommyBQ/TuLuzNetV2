@@ -275,6 +275,12 @@
     <Compile Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaModificar.Designer.cs">
       <DependentUpon>Frm_DetalleFacturaModificar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procedimientos\Factura\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procedimientos\Factura\Frm_AltaFactura.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -425,6 +431,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\DetalleFactura\Frm_DetalleFacturaModificar.resx">
       <DependentUpon>Frm_DetalleFacturaModificar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Factura\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Factura\Frm_AltaFactura.resx">
       <DependentUpon>Frm_AltaFactura.cs</DependentUpon>
