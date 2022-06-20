@@ -2,34 +2,38 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="StatsClientesDBS">
+    <DataSource Name="StatsCotizacionesDBS">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>ebe02010-719c-4466-8d82-f7d7d140a696</rd:DataSourceID>
+      <rd:DataSourceID>d75f0413-67a1-4e52-8ba1-0408dd6b3fd5</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DatosStatCli">
+    <DataSet Name="DatosCotizaciones">
       <Query>
-        <DataSourceName>StatsClientesDBS</DataSourceName>
+        <DataSourceName>StatsCotizacionesDBS</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="Activo">
-          <DataField>Activo</DataField>
+        <Field Name="codEstadoCotizacion">
+          <DataField>codEstadoCotizacion</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="Cantidad">
-          <DataField>Cantidad</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
+        <Field Name="descripcion">
+          <DataField>descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="cantidad">
+          <DataField>cantidad</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>StatsClientesDBS</rd:DataSetName>
-        <rd:SchemaPath>G:\Facultad\3° año\PAV Programacion de Aplicaciones Visuales\TPI\TuLuzNetV2\Reportes\ClientesXActivo\StatsClientesDBS.xsd</rd:SchemaPath>
-        <rd:TableName>Stat_CliXActivo</rd:TableName>
+        <rd:DataSetName>StatsCotizacionesDBS</rd:DataSetName>
+        <rd:SchemaPath>G:\Facultad\3° año\PAV Programacion de Aplicaciones Visuales\TPI\TuLuzNetV2\Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xsd</rd:SchemaPath>
+        <rd:TableName>Stat_CotizacionesXEmpleado</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -40,43 +44,45 @@
     <ReportSection>
       <Body>
         <ReportItems>
-          <Chart Name="Chart1">
+          <Chart Name="Chart5">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Group Name="Chart1_CategoryGroup">
+                  <Group Name="Chart5_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Activo.Value</GroupExpression>
+                      <GroupExpression>=Fields!codEstadoCotizacion.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Activo.Value</Value>
+                      <Value>=Fields!codEstadoCotizacion.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Activo.Value</Label>
+                  <Label>=Fields!codEstadoCotizacion.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
             <ChartSeriesHierarchy>
               <ChartMembers>
                 <ChartMember>
-                  <Label>Cantidad</Label>
+                  <Label>cantidad</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartSeriesHierarchy>
             <ChartData>
               <ChartSeriesCollection>
-                <ChartSeries Name="Cantidad">
+                <ChartSeries Name="cantidad">
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Sum(Fields!Cantidad.Value)</Y>
+                        <Y>=Sum(Fields!cantidad.Value)</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
                       </ChartDataLabel>
-                      <Style />
+                      <Style>
+                        <Color>Teal</Color>
+                      </Style>
                       <ChartMarker>
                         <Style />
                       </ChartMarker>
@@ -130,6 +136,7 @@
                       </Style>
                     </ChartMajorGridLines>
                     <ChartMinorGridLines>
+                      <Enabled>False</Enabled>
                       <Style>
                         <Border>
                           <Color>Gainsboro</Color>
@@ -225,6 +232,7 @@
                         <Style>None</Style>
                       </Border>
                       <FontSize>8pt</FontSize>
+                      <Format>0.0;(0.0)</Format>
                       <Color>#5c5c5c</Color>
                     </Style>
                     <ChartAxisTitle>
@@ -370,10 +378,10 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DatosStatCli</DataSetName>
-            <Top>0.14111cm</Top>
-            <Height>10.21229cm</Height>
-            <Width>16.51cm</Width>
+            <DataSetName>DatosCotizaciones</DataSetName>
+            <Top>0.17639cm</Top>
+            <Height>10.2041cm</Height>
+            <Width>9.18104cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -383,78 +391,197 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
-          <Textbox Name="Textbox2">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>False = No Activo</Value>
-                    <Style>
-                      <Color>DimGray</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>10.52979cm</Top>
-            <Left>5.20912cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.97625cm</Width>
+          <Tablix Name="Tablix2">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>1.6401cm</Width>
+                </TablixColumn>
+                <TablixColumn>
+                  <Width>2.96302cm</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Cod.</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox14</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="Textbox16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Descripcion</Value>
+                                  <Style>
+                                    <FontSize>12pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Textbox16</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <BackgroundColor>LightBlue</BackgroundColor>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+                <TablixRow>
+                  <Height>0.6cm</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="codEstadoCotizacion">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!codEstadoCotizacion.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>codEstadoCotizacion</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                    <TablixCell>
+                      <CellContents>
+                        <Textbox Name="descripcion">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!descripcion.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>descripcion</rd:DefaultName>
+                          <Style>
+                            <Border>
+                              <Color>LightGrey</Color>
+                              <Style>Solid</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Detalles" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DatosCotizaciones</DataSetName>
+            <Top>1.49021cm</Top>
+            <Left>10.29292cm</Left>
+            <Height>1.2cm</Height>
+            <Width>4.60313cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Style>None</Style>
               </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
             </Style>
-          </Textbox>
-          <Textbox Name="Textbox3">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>True = Activo</Value>
-                    <Style>
-                      <Color>DimGray</Color>
-                    </Style>
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>Textbox2</rd:DefaultName>
-            <Top>11.23562cm</Top>
-            <Left>5.20912cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.97625cm</Width>
-            <ZIndex>2</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
+          </Tablix>
         </ReportItems>
-        <Height>4.73809in</Height>
+        <Height>4.22917in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
       <Page>
         <PageHeader>
-          <Height>1.95792cm</Height>
+          <Height>1.68162cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -465,7 +592,7 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>Estadística de Clientes</Value>
+                      <Value>Estadística de Cotizaciones Por Estado</Value>
                       <Style>
                         <FontSize>16pt</FontSize>
                         <FontWeight>Bold</FontWeight>
@@ -500,7 +627,7 @@
           </Style>
         </PageHeader>
         <PageFooter>
-          <Height>2.08228cm</Height>
+          <Height>2.63412cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -519,9 +646,10 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>ExecutionTime</rd:DefaultName>
-              <Top>0.84728cm</Top>
+              <Top>1.39912cm</Top>
+              <Left>0.28787cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.8175cm</Width>
+              <Width>2.5cm</Width>
               <Style>
                 <Border>
                   <Style>None</Style>
@@ -561,12 +689,27 @@
       </Page>
     </ReportSection>
   </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="RParametro">
+      <DataType>String</DataType>
+      <Nullable>true</Nullable>
+      <AllowBlank>true</AllowBlank>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
   <ReportParametersLayout>
     <GridLayoutDefinition>
       <NumberOfColumns>4</NumberOfColumns>
       <NumberOfRows>2</NumberOfRows>
+      <CellDefinitions>
+        <CellDefinition>
+          <ColumnIndex>0</ColumnIndex>
+          <RowIndex>0</RowIndex>
+          <ParameterName>RParametro</ParameterName>
+        </CellDefinition>
+      </CellDefinitions>
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>ca34b57f-fa93-4e60-99ea-9b4001d61933</rd:ReportID>
+  <rd:ReportID>aed95031-5d75-427f-8c3b-4ba43eedc975</rd:ReportID>
 </Report>

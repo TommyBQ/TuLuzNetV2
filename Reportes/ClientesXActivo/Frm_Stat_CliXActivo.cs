@@ -29,7 +29,6 @@ namespace TuLuzNet.Reportes.ClientesXActivo
         private void rv_scxa_Load(object sender, EventArgs e)
         {
             DataTable tabla = new DataTable();
-            string estado = "";
 
             tabla = _Nc.RecuperarCantClientesActivos();
 

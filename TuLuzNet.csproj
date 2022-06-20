@@ -346,6 +346,20 @@
     <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.Designer.cs">
       <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.Designer.cs">
+      <DependentUpon>Frm_Stat_CotXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.cs">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ABMs\Barrios\Frm_ABM_Barrios.resx">
       <DependentUpon>Frm_ABM_Barrios.cs</DependentUpon>
@@ -472,7 +486,11 @@
     <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.resx">
       <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.resx">
+      <DependentUpon>Frm_Stat_CotXEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Rpt_CotXEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Stat_CotXEmpleado.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -515,6 +533,17 @@
     </None>
     <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xss">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xsc">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatsCotizacionesDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xss">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

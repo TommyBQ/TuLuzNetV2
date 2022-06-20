@@ -117,11 +117,11 @@ namespace TuLuzNet.Reportes.ClientesXActivo
             // 
             // btn_Grafico
             // 
-            this.btn_Grafico.Location = new System.Drawing.Point(475, 80);
+            this.btn_Grafico.Location = new System.Drawing.Point(622, 136);
             this.btn_Grafico.Name = "btn_Grafico";
-            this.btn_Grafico.Size = new System.Drawing.Size(75, 23);
+            this.btn_Grafico.Size = new System.Drawing.Size(166, 25);
             this.btn_Grafico.TabIndex = 144;
-            this.btn_Grafico.Text = "Grafico";
+            this.btn_Grafico.Text = "Estadísticas Por Clientes";
             this.btn_Grafico.UseVisualStyleBackColor = true;
             this.btn_Grafico.Click += new System.EventHandler(this.btn_Grafico_Click);
             // 

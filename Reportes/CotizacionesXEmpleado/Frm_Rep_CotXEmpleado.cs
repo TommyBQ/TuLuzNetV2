@@ -61,5 +61,11 @@ namespace TuLuzNet.Reportes.CotizacionesXEmpleado
             Frm_PaginaPrincipal frm_PaginaPrincipal = new Frm_PaginaPrincipal();
             frm_PaginaPrincipal.Show();
         }
+
+        private void btn_Grafico_Click(object sender, EventArgs e)
+        {
+            Frm_Stat_CotXEmpleado frm_Stat_CotXEmpleado = new Frm_Stat_CotXEmpleado();
+            frm_Stat_CotXEmpleado.Show();
+        }
     }
 }
