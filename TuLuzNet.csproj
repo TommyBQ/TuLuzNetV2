@@ -321,6 +321,17 @@
     <Compile Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.Designer.cs">
       <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.Designer.cs">
+      <DependentUpon>Frm_Stat_CliXActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\StatsClientesDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.cs">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
     </Compile>
@@ -453,7 +464,11 @@
     <EmbeddedResource Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.resx">
       <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.resx">
+      <DependentUpon>Frm_Stat_CliXActivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ClientesXActivo\Rpt_CliXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Stat_CliXActivo.rdlc" />
     <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.resx">
       <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -478,6 +493,17 @@
     </None>
     <None Include="Reportes\ClientesXActivo\ClientesDBSimulator.xss">
       <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xsc">
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatsClientesDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xss">
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
     </None>
     <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xsc">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>

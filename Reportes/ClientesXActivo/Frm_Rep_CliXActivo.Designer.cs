@@ -37,6 +37,7 @@ namespace TuLuzNet.Reportes.ClientesXActivo
             this.label1 = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
+            this.btn_Grafico = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // rv_cxa
@@ -114,11 +115,22 @@ namespace TuLuzNet.Reportes.ClientesXActivo
             this.btnSalir.UseVisualStyleBackColor = true;
             this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
+            // btn_Grafico
+            // 
+            this.btn_Grafico.Location = new System.Drawing.Point(475, 80);
+            this.btn_Grafico.Name = "btn_Grafico";
+            this.btn_Grafico.Size = new System.Drawing.Size(75, 23);
+            this.btn_Grafico.TabIndex = 144;
+            this.btn_Grafico.Text = "Grafico";
+            this.btn_Grafico.UseVisualStyleBackColor = true;
+            this.btn_Grafico.Click += new System.EventHandler(this.btn_Grafico_Click);
+            // 
             // Frm_Rep_CliXActivo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 557);
+            this.Controls.Add(this.btn_Grafico);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.label1);
@@ -144,5 +156,6 @@ namespace TuLuzNet.Reportes.ClientesXActivo
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnSalir;
+        private System.Windows.Forms.Button btn_Grafico;
     }
 }

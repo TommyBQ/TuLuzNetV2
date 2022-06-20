@@ -50,6 +50,11 @@ namespace TuLuzNet.Negocio
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE cuitCliente LIKE '%" + cuitCliente + "%'";
             return _BD_clientes.EjecutarSQL(sql);
         }
+        public DataTable RecuperarCantClientesActivos()
+        {
+            string sql = @"SELECT activo, count(*) as Cantidad FROM [BD3K6G02_2022].[dbo].[Cliente] GROUP BY activo";
+            return _BD_clientes.EjecutarSQL(sql);
+        }
 
         public void AltaCliente(Control.ControlCollection controles)//aca recibe todos los txtbox cmbbox
         {
