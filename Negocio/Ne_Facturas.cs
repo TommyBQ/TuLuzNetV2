@@ -69,8 +69,8 @@ namespace TuLuzNet.Negocio
         {
             string sql = "INSERT [BD3K6G02_2022].[dbo].[Factura] (numeroFactura, fecha, tipoFactura, numDocEmpleado, cuilCuit, activo) VALUES (";
             sql += this.numeroFactura + ", ";
-            sql += "CONVERT (date, '" + this.fecha + "', 103)" + ", ";
-            sql += this.tipoFactura + ", ";
+            sql += "CONVERT (date, '" + this.fecha + "', 103)" + ", '";
+            sql += this.tipoFactura + "', ";
             sql += this.numDocEmpleado + ", ";
             sql += this.cuil + ", ";
             sql += this.activo + "";
