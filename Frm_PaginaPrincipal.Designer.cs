@@ -54,9 +54,9 @@ namespace TuLuzNet
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnStatsProdMasVendido = new System.Windows.Forms.Button();
+            this.btnStatsCotXEstado = new System.Windows.Forms.Button();
+            this.btnStatsCliXAct = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -310,32 +310,35 @@ namespace TuLuzNet
             this.button3.Text = "Empleados por Activo";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnStatsProdMasVendido
             // 
-            this.button4.Location = new System.Drawing.Point(350, 370);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(131, 40);
-            this.button4.TabIndex = 30;
-            this.button4.Text = "Cotizaciones por Precio";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnStatsProdMasVendido.Location = new System.Drawing.Point(350, 370);
+            this.btnStatsProdMasVendido.Name = "btnStatsProdMasVendido";
+            this.btnStatsProdMasVendido.Size = new System.Drawing.Size(131, 40);
+            this.btnStatsProdMasVendido.TabIndex = 30;
+            this.btnStatsProdMasVendido.Text = "Producto más vendido por Año";
+            this.btnStatsProdMasVendido.UseVisualStyleBackColor = true;
+            this.btnStatsProdMasVendido.Click += new System.EventHandler(this.btnStatsProdMasVendido_Click);
             // 
-            // button5
+            // btnStatsCotXEstado
             // 
-            this.button5.Location = new System.Drawing.Point(486, 325);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(131, 40);
-            this.button5.TabIndex = 29;
-            this.button5.Text = "Cotizaciones por Estado";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnStatsCotXEstado.Location = new System.Drawing.Point(486, 325);
+            this.btnStatsCotXEstado.Name = "btnStatsCotXEstado";
+            this.btnStatsCotXEstado.Size = new System.Drawing.Size(131, 40);
+            this.btnStatsCotXEstado.TabIndex = 29;
+            this.btnStatsCotXEstado.Text = "Cotizaciones por Estado";
+            this.btnStatsCotXEstado.UseVisualStyleBackColor = true;
+            this.btnStatsCotXEstado.Click += new System.EventHandler(this.btnStatsCotXEstado_Click);
             // 
-            // button6
+            // btnStatsCliXAct
             // 
-            this.button6.Location = new System.Drawing.Point(350, 325);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(131, 40);
-            this.button6.TabIndex = 28;
-            this.button6.Text = "Clientes por Activos";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnStatsCliXAct.Location = new System.Drawing.Point(350, 325);
+            this.btnStatsCliXAct.Name = "btnStatsCliXAct";
+            this.btnStatsCliXAct.Size = new System.Drawing.Size(131, 40);
+            this.btnStatsCliXAct.TabIndex = 28;
+            this.btnStatsCliXAct.Text = "Clientes por Activos";
+            this.btnStatsCliXAct.UseVisualStyleBackColor = true;
+            this.btnStatsCliXAct.Click += new System.EventHandler(this.btnStatsCliXAct_Click);
             // 
             // label3
             // 
@@ -355,9 +358,9 @@ namespace TuLuzNet
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button6);
+            this.Controls.Add(this.btnStatsProdMasVendido);
+            this.Controls.Add(this.btnStatsCotXEstado);
+            this.Controls.Add(this.btnStatsCliXAct);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.btnPedidosXCliente);
             this.Controls.Add(this.btnPedidosEntrePrecios);
@@ -417,9 +420,9 @@ namespace TuLuzNet
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnStatsProdMasVendido;
+        private System.Windows.Forms.Button btnStatsCotXEstado;
+        private System.Windows.Forms.Button btnStatsCliXAct;
         private System.Windows.Forms.Label label3;
     }
 }

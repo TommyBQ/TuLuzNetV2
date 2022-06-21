@@ -35,6 +35,13 @@ namespace TuLuzNet.Negocio
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Productos] WHERE nombre LIKE '%" + nombre + "%'";
             return _BD_Productos.EjecutarSQL(sql);
         }
+
+        public DataTable RecuperarProductosXAño(string año)
+        {
+            string sql = @"SELECT DP.codigoProducto, DP.cantidad, PR.nombre, P.añoCotizacion FROM Pedidos P JOIN DetallePedido DP ON DP.numeroPedido = P.numeroPedido JOIN Productos PR ON PR.codProducto = DP.codigoProducto WHERE P.añoCotizacion = " + año;
+            return _BD_Productos.EjecutarSQL(sql);
+        }
+
         public DataTable RecuperarProductos() //Todos los productos
         {
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Productos]";

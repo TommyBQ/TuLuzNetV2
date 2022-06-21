@@ -41,7 +41,6 @@ namespace TuLuzNet.Reportes.CotizacionesXEmpleado
             this.txtNomEmpleado = new TuLuzNet.Clases.TextBox01();
             this.btnSalir = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.btn_Grafico = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label2
@@ -162,22 +161,11 @@ namespace TuLuzNet.Reportes.CotizacionesXEmpleado
             this.label5.TabIndex = 143;
             this.label5.Text = "Empleado";
             // 
-            // btn_Grafico
-            // 
-            this.btn_Grafico.Location = new System.Drawing.Point(624, 137);
-            this.btn_Grafico.Name = "btn_Grafico";
-            this.btn_Grafico.Size = new System.Drawing.Size(164, 25);
-            this.btn_Grafico.TabIndex = 145;
-            this.btn_Grafico.Text = "Estadísticas Por Cotizaciones";
-            this.btn_Grafico.UseVisualStyleBackColor = true;
-            this.btn_Grafico.Click += new System.EventHandler(this.btn_Grafico_Click);
-            // 
             // Frm_Rep_CotXEmpleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 557);
-            this.Controls.Add(this.btn_Grafico);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.cmbCuit);
@@ -211,6 +199,5 @@ namespace TuLuzNet.Reportes.CotizacionesXEmpleado
         private Clases.ComboBox01 cmbCuit;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btn_Grafico;
     }
 }
