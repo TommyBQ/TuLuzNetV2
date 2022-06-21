@@ -121,6 +121,7 @@ namespace TuLuzNet.Negocio
             //SqlModificar += " numeroPedido = " + this.numPedido;
             SqlModificar += " tipoDniVendedor = " + this.tipoDocVendedor;
             SqlModificar += ", numDniVendedor = " + this.numDocVendedor;
+            SqlModificar += ", fechaPedido = '" + this.dtpFecha.ToShortDateString() + "'";
             SqlModificar += ", condicionPago = '" + this.condicionPago + "'";
             SqlModificar += ", cuitCliente = " + this.cuitCliente;
             SqlModificar += ", añoCotizacion = " + this.añoCotizacion;

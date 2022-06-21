@@ -95,6 +95,7 @@ namespace TuLuzNet.ABMs.Pedidos
                 _Np.numCotizacion = int.Parse(this.txtNumCotizacion.Text);
                 _Np.añoCotizacion = int.Parse(this.txtAñoCotizacion.Text);
                 _Np.cuitCliente = this.cmbCuitCliente.Text;
+                _Np.dtpFecha = Convert.ToDateTime(this.dtpFecha.Value.ToString());
                 _Np.numDocVendedor = int.Parse(this.txtDocVendedor.Text);
                 _Np.tipoDocVendedor = (int)this.cmbTDVendedor.SelectedValue;
                 _Np.condicionPago = this.txtCondPago.Text;

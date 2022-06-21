@@ -685,7 +685,10 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Estadisticas\EmpleadosXActivo\" />
+    <Folder Include="Estadisticas\PedidosXMes\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />
