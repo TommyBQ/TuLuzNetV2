@@ -62,5 +62,11 @@ namespace TuLuzNet.Reportes.ClientesXActivo
             Frm_PaginaPrincipal frm_PaginaPrincipal = new Frm_PaginaPrincipal();
             frm_PaginaPrincipal.Show();
         }
+
+        private void btn_Grafico_Click(object sender, EventArgs e)
+        {
+            Frm_Stat_CliXActivo frm_Stat_CliXActivo = new Frm_Stat_CliXActivo();
+            frm_Stat_CliXActivo.Show();
+        }
     }
 }
