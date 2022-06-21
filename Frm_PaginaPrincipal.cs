@@ -15,6 +15,8 @@ using TuLuzNet.Reportes.ClientesXActivo;
 using TuLuzNet.Reportes.CotizacionesXEmpleado;
 using TuLuzNet.Reportes.EmpleadosXActivo;
 using TuLuzNet.Reportes.CotizacionesEntrePrecio;
+using TuLuzNet.Reportes.PedidosXCliente;
+using TuLuzNet.Reportes.PedidosEntrePrecio;
 
 namespace TuLuzNet
 {
@@ -143,6 +145,20 @@ namespace TuLuzNet
             Hide();
             Frm_Rep_CotEntrePrecios frm_Rep_CotEntrePrecios = new Frm_Rep_CotEntrePrecios();
             frm_Rep_CotEntrePrecios.Show();
+        }
+
+        private void btnPedidosXCliente_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_PedidoXCli frm_Rep_PedidoXCli = new Frm_Rep_PedidoXCli();
+            frm_Rep_PedidoXCli.Show();
+        }
+
+        private void btnPedidosEntrePrecios_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_PedidoXPrecio frm_Rep_PedidoXPrecio = new Frm_Rep_PedidoXPrecio();
+            frm_Rep_PedidoXPrecio.Show();
         }
     }
 }

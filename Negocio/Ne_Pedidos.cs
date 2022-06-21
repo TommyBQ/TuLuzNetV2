@@ -38,6 +38,12 @@ namespace TuLuzNet.Negocio
             return Ec;
         }
 
+        public DataTable RecuperarPedidoEntrePrecio(string min, string max)
+        {
+            string sql = "SELECT P.numeroPedido, C.nombreCliente, C.apellidoCliente, C.cuitCliente, P.fechaPedido, P.numDniVendedor, P.condicionPago, DP.precio From Pedidos P JOIN Cliente C ON P.cuitCliente = C.cuitCliente JOIN DetallePedido DP ON DP.numeroPedido = P.numeroPedido WHERE DP.precio BETWEEN " + min + " AND " + max;
+            return _BD_Pedidos.EjecutarSQL(sql);
+        }
+
         internal object obtenerNumero()
         {
             int numero = 1;
@@ -54,6 +60,14 @@ namespace TuLuzNet.Negocio
             }
             return numero + 1;
         }
+
+        public DataTable RecuperarPedidoXCliente(string cuit)
+        {
+            string sql = "SELECT numeroPedido, fechaPedido, numDniVendedor, condicionPago FROM [BD3K6G02_2022].[dbo].[Pedidos] WHERE cuitCliente = " + cuit;
+            DataTable rtdo = _BD_Pedidos.EjecutarSQL(sql);
+            return rtdo;
+        }
+
         public double PrecioProducto(string producto)
         {
             DataTable rtdo = new DataTable();

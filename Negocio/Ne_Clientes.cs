@@ -25,6 +25,31 @@ namespace TuLuzNet.Negocio
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente]";
             return _BD_clientes.EjecutarSQL(sql);
         }
+
+        public EstructuraCombo DatosComboCuit()
+        {
+            EstructuraCombo Ec = new EstructuraCombo();
+            Ec.Display = "cuitCliente";
+            Ec.Value = "cuitCliente";
+            Ec.Sql = "SELECT " + Ec.Display + ", " + Ec.Value + " FROM [BD3K6G02_2022].[dbo].[Cliente]";
+            Ec.Tabla = _BD_clientes.EjecutarSQL(Ec.Sql);
+            return Ec;
+        }
+
+        public void RecargarCliente(Control.ControlCollection Controles, DataTable tabla)
+        {
+            foreach (var item in Controles)
+            {
+                string TipoControl = item.GetType().Name;
+                if (TipoControl == "TextBox01")
+                {
+                    TextBox01 txt = item as TextBox01;
+                    if (txt._columna == "nombreCliente" || txt._columna == "apellidoCliente")
+                        txt.Text = _TE.BuscarDato(tabla, txt._columna);
+                }
+            }
+        }
+
         public DataTable RecuperarClientesXActivo(int estado)
         {
             string sql = @"SELECT cuitCliente, nombreCliente, apellidoCliente FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE activo = " + estado.ToString();
@@ -45,7 +70,7 @@ namespace TuLuzNet.Negocio
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE apellido LIKE '%" + apellido + "%'";
             return _BD_clientes.EjecutarSQL(sql);
         }
-        public DataTable RecuperarClienteXCUIT(string cuitCliente)
+        public DataTable RecuperaPedidoXCliente(string cuitCliente)
         {
             string sql = @"SELECT * FROM [BD3K6G02_2022].[dbo].[Cliente] WHERE cuitCliente LIKE '%" + cuitCliente + "%'";
             return _BD_clientes.EjecutarSQL(sql);

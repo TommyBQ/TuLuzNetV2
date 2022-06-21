@@ -22,7 +22,6 @@ namespace TuLuzNet.Reportes.CotizacionesEntrePrecio
 
         private void Frm_Rep_CotEntrePrecios_Load(object sender, EventArgs e)
         {
-
             this.rvCotXPrecios.RefreshReport();
         }
 
@@ -46,7 +45,7 @@ namespace TuLuzNet.Reportes.CotizacionesEntrePrecio
             ReportDataSource datos = new ReportDataSource("DataSet1", tabla);
             rvCotXPrecios.LocalReport.ReportEmbeddedResource = "TuLuzNet.Reportes.CotizacionesEntrePrecio.Rpt_CotXPrecio.rdlc";
             ReportParameter[] parametro = new ReportParameter[1];
-            parametro[0] = new ReportParameter("RParametro", "Para la cotizacion entre: $" + txtPrecioMin + " y $" + txtPrecioMax);
+            parametro[0] = new ReportParameter("RParametro", "Para la cotizacion entre: $" + txtPrecioMin.Text + " y $" + txtPrecioMax.Text);
             rvCotXPrecios.LocalReport.SetParameters(parametro);
             rvCotXPrecios.LocalReport.DataSources.Clear();
             rvCotXPrecios.LocalReport.DataSources.Add(datos);

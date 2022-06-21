@@ -385,6 +385,31 @@
     <Compile Include="Reportes\EmpleadosXActivo\Frm_Rep_EmpXActivo.Designer.cs">
       <DependentUpon>Frm_Rep_EmpXActivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.cs">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.Designer.cs">
+      <DependentUpon>Frm_Rep_PedidoXPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.Designer.cs">
+      <DependentUpon>Frm_Rep_PedidoXCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\PedidosDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ABMs\Barrios\Frm_ABM_Barrios.resx">
       <DependentUpon>Frm_ABM_Barrios.cs</DependentUpon>
@@ -524,6 +549,14 @@
       <DependentUpon>Frm_Rep_EmpXActivo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\EmpleadosXActivo\Rpt_EmpXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.resx">
+      <DependentUpon>Frm_Rep_PedidoXPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PedidosEntrePrecio\Rpt_PedXPrecio.rdlc" />
+    <EmbeddedResource Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.resx">
+      <DependentUpon>Frm_Rep_PedidoXCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PedidosXCliente\Rpt_PedidoXCli.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -599,6 +632,28 @@
     </None>
     <None Include="Reportes\EmpleadosXActivo\EmpleadosDBSimulator.xss">
       <DependentUpon>EmpleadosDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xsc">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosXPrecioDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xss">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xsc">
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xss">
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

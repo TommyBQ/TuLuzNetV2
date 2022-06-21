@@ -58,7 +58,7 @@ namespace TuLuzNet.ABMs.Clientes
         private void RecuperarCliente()
         {
             DataTable tabla = new DataTable();
-            tabla = _NC.RecuperarClienteXCUIT(cuitCliente);
+            tabla = _NC.RecuperaPedidoXCliente(cuitCliente);
             _TE.CargarFormulario(this.Controls, tabla);
 
         }
