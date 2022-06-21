@@ -23,6 +23,9 @@ namespace TuLuzNet.Negocio
         public string observaciones { get; set; }
         public float precioTotal { get; set; }
         public string motivoPerdida { get; set; }
+
+        
+
         public string nombreCompetidor { get; set; }
 
         BD_acceso_a_datos _BD_cotizaciones = new BD_acceso_a_datos();
@@ -46,6 +49,12 @@ namespace TuLuzNet.Negocio
         {
             string sql = "SELECT codProducto as Producto, cantidad as Cant, Precio FROM [BD3K6G02_2022].[dbo].[DetalleCotizacion] " +
                             "WHERE numeroCotizacion = " + numero + " AND año = " + año;
+            return _BD_cotizaciones.EjecutarSQL(sql);
+        }
+        public DataTable RecuperarCantCotz()
+        {
+            string sql = "SELECT c.codEstadoCotizacion, e.descripcion, COUNT(*) as cantidad FROM [BD3K6G02_2022].[dbo].[Cotizaciones] c JOIN [BD3K6G02_2022].[dbo].[EstadosCotizaciones] e ON (c.codEstadoCotizacion=e.codEstado) " +
+                            "GROUP BY c.codEstadoCotizacion, e.descripcion";
             return _BD_cotizaciones.EjecutarSQL(sql);
         }
         public DataTable RecuperarCotizaciones(string numero = "", string año = "", string cuitCliente = "", int estado = -1)
@@ -97,6 +106,12 @@ namespace TuLuzNet.Negocio
         public DataTable RecuperarCotizacionXNum(string numero)
         {
             string sql = "SELECT * FROM [BD3K6G02_2022].[dbo].[Cotizaciones] WHERE numeroCotizacion = '" + numero + "'";
+            return _BD_cotizaciones.EjecutarSQL(sql);
+        }        
+        
+        public DataTable RecuperarCotizacionXPrecio(string min, string max)
+        {
+            string sql = "SELECT C.[numeroCotizacion],C.[año],C.[cuitCliente],C.[numDocVendedor],EC.[descripcion],C.[nombreCliente],C.[apellidoCliente],C.[fecha],C.[observaciones],C.[precioTotal],C.[motivoPerdida] FROM [BD3K6G02_2022].[dbo].[Cotizaciones] C JOIN EstadosCotizaciones EC ON C.codEstadoCotizacion = EC.codEstado WHERE C.precioTotal BETWEEN " + min + " AND " + max;
             return _BD_cotizaciones.EjecutarSQL(sql);
         }
 

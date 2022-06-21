@@ -93,7 +93,7 @@ namespace TuLuzNet.ABMs
                 else
                 if (txtBoxCUIT.Text != string.Empty)
                 {
-                    this.dataGridViewClientes.DataSource = clientes.RecuperarClienteXCUIT(txtBoxCUIT.Text);
+                    this.dataGridViewClientes.DataSource = clientes.RecuperaPedidoXCliente(txtBoxCUIT.Text);
                     if (dataGridViewClientes.Rows.Count == 1)
                     {
                         MessageBox.Show("No se encontró ningun cliente.", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

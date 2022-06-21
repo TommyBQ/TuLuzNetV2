@@ -327,6 +327,31 @@
     <Compile Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.Designer.cs">
       <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
     </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.Designer.cs">
+      <DependentUpon>Frm_Stat_CliXActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\ClientesXActivo\StatsClientesDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesEntrePrecio\CotizacionesXPrecioDBSimulator.cs">
+      <DependentUpon>CotizacionesXPrecioDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesEntrePrecio\CotizacionesXPrecioDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CotizacionesXPrecioDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesEntrePrecio\Frm_Rep_CotEntrePrecios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesEntrePrecio\Frm_Rep_CotEntrePrecios.Designer.cs">
+      <DependentUpon>Frm_Rep_CotEntrePrecios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.cs">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
     </Compile>
@@ -340,6 +365,56 @@
     </Compile>
     <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.Designer.cs">
       <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.Designer.cs">
+      <DependentUpon>Frm_Stat_CotXEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.cs">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EmpleadosXActivo\EmpleadosDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EmpleadosDBSimulator.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\EmpleadosXActivo\Frm_Rep_EmpXActivo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\EmpleadosXActivo\Frm_Rep_EmpXActivo.Designer.cs">
+      <DependentUpon>Frm_Rep_EmpXActivo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.cs">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.Designer.cs">
+      <DependentUpon>Frm_Rep_PedidoXPrecio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.Designer.cs">
+      <DependentUpon>Frm_Rep_PedidoXCli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\PedidosXCliente\PedidosDBSimulator.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="ABMs\Barrios\Frm_ABM_Barrios.resx">
@@ -462,11 +537,35 @@
     <EmbeddedResource Include="Reportes\ClientesXActivo\Frm_Rep_CliXActivo.resx">
       <DependentUpon>Frm_Rep_CliXActivo.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Frm_Stat_CliXActivo.resx">
+      <DependentUpon>Frm_Stat_CliXActivo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\ClientesXActivo\Rpt_CliXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\ClientesXActivo\Stat_CliXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\CotizacionesEntrePrecio\Frm_Rep_CotEntrePrecios.resx">
+      <DependentUpon>Frm_Rep_CotEntrePrecios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CotizacionesEntrePrecio\Rpt_CotXPrecio.rdlc" />
     <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Rep_CotXEmpleado.resx">
       <DependentUpon>Frm_Rep_CotXEmpleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Frm_Stat_CotXEmpleado.resx">
+      <DependentUpon>Frm_Stat_CotXEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Rpt_CotXEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\CotizacionesXEmpleado\Stat_CotXEmpleado.rdlc" />
+    <EmbeddedResource Include="Reportes\EmpleadosXActivo\Frm_Rep_EmpXActivo.resx">
+      <DependentUpon>Frm_Rep_EmpXActivo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\EmpleadosXActivo\Rpt_EmpXActivo.rdlc" />
+    <EmbeddedResource Include="Reportes\PedidosEntrePrecio\Frm_Rep_PedidoXPrecio.resx">
+      <DependentUpon>Frm_Rep_PedidoXPrecio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PedidosEntrePrecio\Rpt_PedXPrecio.rdlc" />
+    <EmbeddedResource Include="Reportes\PedidosXCliente\Frm_Rep_PedidoXCli.resx">
+      <DependentUpon>Frm_Rep_PedidoXCli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\PedidosXCliente\Rpt_PedidoXCli.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -488,6 +587,28 @@
     <None Include="Reportes\ClientesXActivo\ClientesDBSimulator.xss">
       <DependentUpon>ClientesDBSimulator.xsd</DependentUpon>
     </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xsc">
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatsClientesDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\ClientesXActivo\StatsClientesDBS.xss">
+      <DependentUpon>StatsClientesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesEntrePrecio\CotizacionesXPrecioDBSimulator.xsc">
+      <DependentUpon>CotizacionesXPrecioDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesEntrePrecio\CotizacionesXPrecioDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CotizacionesXPrecioDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\CotizacionesEntrePrecio\CotizacionesXPrecioDBSimulator.xss">
+      <DependentUpon>CotizacionesXPrecioDBSimulator.xsd</DependentUpon>
+    </None>
     <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xsc">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
     </None>
@@ -498,6 +619,50 @@
     </None>
     <None Include="Reportes\CotizacionesXEmpleado\CotizacionesDBSimulator.xss">
       <DependentUpon>CotizacionesDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xsc">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>StatsCotizacionesDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\CotizacionesXEmpleado\StatsCotizacionesDBS.xss">
+      <DependentUpon>StatsCotizacionesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EmpleadosXActivo\EmpleadosDBSimulator.xsc">
+      <DependentUpon>EmpleadosDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\EmpleadosXActivo\EmpleadosDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EmpleadosDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\EmpleadosXActivo\EmpleadosDBSimulator.xss">
+      <DependentUpon>EmpleadosDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xsc">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosXPrecioDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\PedidosEntrePrecio\PedidosXPrecioDBS.xss">
+      <DependentUpon>PedidosXPrecioDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xsc">
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosDBSimulator.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\PedidosXCliente\PedidosDBSimulator.xss">
+      <DependentUpon>PedidosDBSimulator.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

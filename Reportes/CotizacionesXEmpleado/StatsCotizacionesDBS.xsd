@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="StatsCotizacionesDBS" targetNamespace="http://tempuri.org/StatsCotizacionesDBS.xsd" xmlns:mstns="http://tempuri.org/StatsCotizacionesDBS.xsd" xmlns="http://tempuri.org/StatsCotizacionesDBS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="StatsCotizacionesDBS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="StatsCotizacionesDBS" msprop:Generator_UserDSName="StatsCotizacionesDBS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stat_CotizacionesXEmpleado" msprop:Generator_TableClassName="Stat_CotizacionesXEmpleadoDataTable" msprop:Generator_TableVarName="tableStat_CotizacionesXEmpleado" msprop:Generator_TablePropName="Stat_CotizacionesXEmpleado" msprop:Generator_RowDeletingName="Stat_CotizacionesXEmpleadoRowDeleting" msprop:Generator_RowChangingName="Stat_CotizacionesXEmpleadoRowChanging" msprop:Generator_RowEvHandlerName="Stat_CotizacionesXEmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="Stat_CotizacionesXEmpleadoRowDeleted" msprop:Generator_UserTableName="Stat_CotizacionesXEmpleado" msprop:Generator_RowChangedName="Stat_CotizacionesXEmpleadoRowChanged" msprop:Generator_RowEvArgName="Stat_CotizacionesXEmpleadoRowChangeEvent" msprop:Generator_RowClassName="Stat_CotizacionesXEmpleadoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="codEstadoCotizacion" msprop:Generator_ColumnVarNameInTable="columncodEstadoCotizacion" msprop:Generator_ColumnPropNameInRow="codEstadoCotizacion" msprop:Generator_ColumnPropNameInTable="codEstadoCotizacionColumn" msprop:Generator_UserColumnName="codEstadoCotizacion" type="xs:int" minOccurs="0" />
+              <xs:element name="descripcion" msprop:Generator_ColumnVarNameInTable="columndescripcion" msprop:Generator_ColumnPropNameInRow="descripcion" msprop:Generator_ColumnPropNameInTable="descripcionColumn" msprop:Generator_UserColumnName="descripcion" type="xs:string" minOccurs="0" />
+              <xs:element name="cantidad" msprop:Generator_ColumnVarNameInTable="columncantidad" msprop:Generator_ColumnPropNameInRow="cantidad" msprop:Generator_ColumnPropNameInTable="cantidadColumn" msprop:Generator_UserColumnName="cantidad" type="xs:long" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

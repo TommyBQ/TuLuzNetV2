@@ -137,6 +137,11 @@ namespace TuLuzNet.Negocio
             string sql = "SELECT * FROM [BD3K6G02_2022].[dbo].[Empleados] WHERE telefono = '" + telefono + "'";
             return _BD_empleados.EjecutarSQL(sql);
         }
+        public DataTable RecuperarTodosEmpleadosXActivo(int estado)
+        {
+            string sql = @"SELECT E.numDoc, E.apellido, E.nombre, E.direccion, B.nombre as barrio, E.telefono, E.numDocJefe FROM [BD3K6G02_2022].[dbo].[Empleados] AS E JOIN Barrio B ON E.codBarrio = B.codBarrio WHERE activo = " + estado.ToString();
+            return _BD_empleados.EjecutarSQL(sql);
+        }
         public void Modificar()
         {
             int activoEmpleado = this.activo ? 1 : 0;

@@ -50,9 +50,14 @@ namespace TuLuzNet
             this.btnEmpleadosXActivo = new System.Windows.Forms.Button();
             this.btnCotizacionesXPrecio = new System.Windows.Forms.Button();
             this.btnPedidosEntrePrecios = new System.Windows.Forms.Button();
-            this.btnPedidoEntreFechas = new System.Windows.Forms.Button();
-            this.btnPedidosXEmpleado = new System.Windows.Forms.Button();
             this.btnPedidosXCliente = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnProveedores
@@ -102,7 +107,7 @@ namespace TuLuzNet
                 | System.Drawing.FontStyle.Underline))));
             this.lblTuLuz.Location = new System.Drawing.Point(0, 0);
             this.lblTuLuz.Name = "lblTuLuz";
-            this.lblTuLuz.Size = new System.Drawing.Size(960, 39);
+            this.lblTuLuz.Size = new System.Drawing.Size(627, 39);
             this.lblTuLuz.TabIndex = 8;
             this.lblTuLuz.Text = "TuLuz";
             this.lblTuLuz.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -160,7 +165,7 @@ namespace TuLuzNet
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(875, 298);
+            this.btnSalir.Location = new System.Drawing.Point(547, 463);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(70, 25);
             this.btnSalir.TabIndex = 14;
@@ -212,7 +217,7 @@ namespace TuLuzNet
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
-            this.label2.Location = new System.Drawing.Point(672, 55);
+            this.label2.Location = new System.Drawing.Point(12, 290);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(112, 32);
             this.label2.TabIndex = 19;
@@ -220,17 +225,17 @@ namespace TuLuzNet
             // 
             // btnReportesXActivos
             // 
-            this.btnReportesXActivos.Location = new System.Drawing.Point(678, 90);
+            this.btnReportesXActivos.Location = new System.Drawing.Point(18, 325);
             this.btnReportesXActivos.Name = "btnReportesXActivos";
             this.btnReportesXActivos.Size = new System.Drawing.Size(131, 40);
             this.btnReportesXActivos.TabIndex = 20;
-            this.btnReportesXActivos.Text = "Reportes Por Activos";
+            this.btnReportesXActivos.Text = "Clientes por Activos";
             this.btnReportesXActivos.UseVisualStyleBackColor = true;
             this.btnReportesXActivos.Click += new System.EventHandler(this.btnReportesXActivos_Click);
             // 
             // btnCotizacionesXEmpleado
             // 
-            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(814, 90);
+            this.btnCotizacionesXEmpleado.Location = new System.Drawing.Point(154, 325);
             this.btnCotizacionesXEmpleado.Name = "btnCotizacionesXEmpleado";
             this.btnCotizacionesXEmpleado.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXEmpleado.TabIndex = 21;
@@ -240,67 +245,122 @@ namespace TuLuzNet
             // 
             // btnEmpleadosXActivo
             // 
-            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(814, 135);
+            this.btnEmpleadosXActivo.Location = new System.Drawing.Point(154, 370);
             this.btnEmpleadosXActivo.Name = "btnEmpleadosXActivo";
             this.btnEmpleadosXActivo.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleadosXActivo.TabIndex = 23;
             this.btnEmpleadosXActivo.Text = "Empleados por Activo";
             this.btnEmpleadosXActivo.UseVisualStyleBackColor = true;
+            this.btnEmpleadosXActivo.Click += new System.EventHandler(this.btnEmpleadosXActivo_Click);
             // 
             // btnCotizacionesXPrecio
             // 
-            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(678, 135);
+            this.btnCotizacionesXPrecio.Location = new System.Drawing.Point(18, 370);
             this.btnCotizacionesXPrecio.Name = "btnCotizacionesXPrecio";
             this.btnCotizacionesXPrecio.Size = new System.Drawing.Size(131, 40);
             this.btnCotizacionesXPrecio.TabIndex = 22;
             this.btnCotizacionesXPrecio.Text = "Cotizaciones por Precio";
             this.btnCotizacionesXPrecio.UseVisualStyleBackColor = true;
+            this.btnCotizacionesXPrecio.Click += new System.EventHandler(this.btnCotizacionesXPrecio_Click);
             // 
             // btnPedidosEntrePrecios
             // 
-            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(814, 180);
+            this.btnPedidosEntrePrecios.Location = new System.Drawing.Point(154, 415);
             this.btnPedidosEntrePrecios.Name = "btnPedidosEntrePrecios";
             this.btnPedidosEntrePrecios.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosEntrePrecios.TabIndex = 25;
             this.btnPedidosEntrePrecios.Text = "Pedidos entre Precios";
             this.btnPedidosEntrePrecios.UseVisualStyleBackColor = true;
-            // 
-            // btnPedidoEntreFechas
-            // 
-            this.btnPedidoEntreFechas.Location = new System.Drawing.Point(678, 180);
-            this.btnPedidoEntreFechas.Name = "btnPedidoEntreFechas";
-            this.btnPedidoEntreFechas.Size = new System.Drawing.Size(131, 40);
-            this.btnPedidoEntreFechas.TabIndex = 24;
-            this.btnPedidoEntreFechas.Text = "Pedido entre Fechas";
-            this.btnPedidoEntreFechas.UseVisualStyleBackColor = true;
-            // 
-            // btnPedidosXEmpleado
-            // 
-            this.btnPedidosXEmpleado.Location = new System.Drawing.Point(814, 225);
-            this.btnPedidosXEmpleado.Name = "btnPedidosXEmpleado";
-            this.btnPedidosXEmpleado.Size = new System.Drawing.Size(131, 40);
-            this.btnPedidosXEmpleado.TabIndex = 27;
-            this.btnPedidosXEmpleado.Text = "Pedidos por Empleado";
-            this.btnPedidosXEmpleado.UseVisualStyleBackColor = true;
+            this.btnPedidosEntrePrecios.Click += new System.EventHandler(this.btnPedidosEntrePrecios_Click);
             // 
             // btnPedidosXCliente
             // 
-            this.btnPedidosXCliente.Location = new System.Drawing.Point(678, 225);
+            this.btnPedidosXCliente.Location = new System.Drawing.Point(18, 416);
             this.btnPedidosXCliente.Name = "btnPedidosXCliente";
             this.btnPedidosXCliente.Size = new System.Drawing.Size(131, 40);
             this.btnPedidosXCliente.TabIndex = 26;
             this.btnPedidosXCliente.Text = "Pedidos por Cliente";
             this.btnPedidosXCliente.UseVisualStyleBackColor = true;
+            this.btnPedidosXCliente.Click += new System.EventHandler(this.btnPedidosXCliente_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(350, 416);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(131, 40);
+            this.button1.TabIndex = 33;
+            this.button1.Text = "Pedidos por Cliente";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(486, 415);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(131, 40);
+            this.button2.TabIndex = 32;
+            this.button2.Text = "Pedidos entre Precios";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(486, 370);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(131, 40);
+            this.button3.TabIndex = 31;
+            this.button3.Text = "Empleados por Activo";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(350, 370);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(131, 40);
+            this.button4.TabIndex = 30;
+            this.button4.Text = "Cotizaciones por Precio";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(486, 325);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(131, 40);
+            this.button5.TabIndex = 29;
+            this.button5.Text = "Cotizaciones por Estado";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(350, 325);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(131, 40);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "Clientes por Activos";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))));
+            this.label3.Location = new System.Drawing.Point(344, 290);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(138, 32);
+            this.label3.TabIndex = 27;
+            this.label3.Text = "Estadísticas";
             // 
             // Frm_PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 335);
-            this.Controls.Add(this.btnPedidosXEmpleado);
+            this.ClientSize = new System.Drawing.Size(627, 500);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnPedidosXCliente);
             this.Controls.Add(this.btnPedidosEntrePrecios);
-            this.Controls.Add(this.btnPedidoEntreFechas);
             this.Controls.Add(this.btnEmpleadosXActivo);
             this.Controls.Add(this.btnCotizacionesXPrecio);
             this.Controls.Add(this.btnCotizacionesXEmpleado);
@@ -353,8 +413,13 @@ namespace TuLuzNet
         private System.Windows.Forms.Button btnEmpleadosXActivo;
         private System.Windows.Forms.Button btnCotizacionesXPrecio;
         private System.Windows.Forms.Button btnPedidosEntrePrecios;
-        private System.Windows.Forms.Button btnPedidoEntreFechas;
-        private System.Windows.Forms.Button btnPedidosXEmpleado;
         private System.Windows.Forms.Button btnPedidosXCliente;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label3;
     }
 }

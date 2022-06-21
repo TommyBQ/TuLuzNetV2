@@ -13,6 +13,10 @@ using TuLuzNet.Procedimientos.Cotizaciones;
 using TuLuzNet.ABMs.Pedidos;
 using TuLuzNet.Reportes.ClientesXActivo;
 using TuLuzNet.Reportes.CotizacionesXEmpleado;
+using TuLuzNet.Reportes.EmpleadosXActivo;
+using TuLuzNet.Reportes.CotizacionesEntrePrecio;
+using TuLuzNet.Reportes.PedidosXCliente;
+using TuLuzNet.Reportes.PedidosEntrePrecio;
 
 namespace TuLuzNet
 {
@@ -129,67 +133,32 @@ namespace TuLuzNet
             frm_Rep_CotXEmpleado.Show();
         }
 
-        //private void btnReportesXActivos_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_ClienteXActivo frm_ClienteXActivo = new Frm_ClienteXActivo();
-        //    frm_ClienteXActivo.Show();
-        //}
+        private void btnEmpleadosXActivo_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_EmpXActivo frm_Rep_EmpXActivo = new Frm_Rep_EmpXActivo();
+            frm_Rep_EmpXActivo.Show();
+        }
 
-        //private void btnCotizacionesXEmpleado_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_CotizacionesXEmpleado frm_CotizacionesXEmpleado = new Frm_CotizacionesXEmpleado();
-        //    frm_CotizacionesXEmpleado.Show();
-        //}
+        private void btnCotizacionesXPrecio_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_CotEntrePrecios frm_Rep_CotEntrePrecios = new Frm_Rep_CotEntrePrecios();
+            frm_Rep_CotEntrePrecios.Show();
+        }
 
-        //private void btnCotizacionesXPrecio_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_CotizacionesXPrecio frm_CotizacionesXPrecio = new Frm_CotizacionesXPrecio();
-        //    frm_CotizacionesXPrecio.Show();
-        //}
+        private void btnPedidosXCliente_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_PedidoXCli frm_Rep_PedidoXCli = new Frm_Rep_PedidoXCli();
+            frm_Rep_PedidoXCli.Show();
+        }
 
-        //private void btnEmpleadosXActivo_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_EmpleadosXActivo frm_EmpleadosXActivo = new Frm_EmpleadosXActivo();
-        //    frm_EmpleadosXActivo.Show();
-        //}
-
-        //private void btnPedidoEntreFechas_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_PedidoEntreFechas frm_PedidoEntreFechas = new Frm_PedidoEntreFechas();
-        //    frm_PedidoEntreFechas.Show();
-        //}
-
-        //private void btnPedidosEntrePrecios_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_PedidosEntrePrecios frm_PedidosEntrePrecios = new Frm_PedidosEntrePrecios();
-        //    frm_PedidosEntrePrecios.Show();
-        //}
-
-        //private void btnPedidosXEmpleado_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_PedidosXEmpleado frm_PedidosXEmpleado = new Frm_PedidosXEmpleado();
-        //    frm_PedidosXEmpleado.Show();
-        //}
-
-        //private void btnPedidosXCliente_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_PedidosXCliente frm_PedidosXCliente = new Frm_PedidosXCliente();
-        //    frm_PedidosXCliente.Show();
-        //}
-
-        //private void btnReportes_Click(object sender, EventArgs e)
-        //{
-        //    Hide();
-        //    Frm_PaginaPrincipalReportes frm_PaginaPrincipalReportes = new Frm_PaginaPrincipalReportes();
-        //    frm_PaginaPrincipalReportes.Show();
-        //}
+        private void btnPedidosEntrePrecios_Click(object sender, EventArgs e)
+        {
+            Hide();
+            Frm_Rep_PedidoXPrecio frm_Rep_PedidoXPrecio = new Frm_Rep_PedidoXPrecio();
+            frm_Rep_PedidoXPrecio.Show();
+        }
     }
 }
