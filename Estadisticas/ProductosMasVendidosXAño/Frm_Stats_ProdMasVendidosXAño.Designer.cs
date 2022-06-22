@@ -32,10 +32,10 @@ namespace TuLuzNet.Estadisticas.ProductosMasVendidosXAño
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Stats_ProdMasVendidosXAño));
             this.rvProd = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtAño = new TuLuzNet.Clases.TextBox01();
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnBuscar = new System.Windows.Forms.Button();
+            this.txtAño = new TuLuzNet.Clases.TextBox01();
             this.SuspendLayout();
             // 
             // rvProd
@@ -55,17 +55,6 @@ namespace TuLuzNet.Estadisticas.ProductosMasVendidosXAño
             this.label2.Size = new System.Drawing.Size(500, 32);
             this.label2.TabIndex = 23;
             this.label2.Text = "Estadística: Productos más vendidos por Año";
-            // 
-            // txtAño
-            // 
-            this.txtAño._columna = null;
-            this.txtAño._mensajeError = null;
-            this.txtAño._repetible = false;
-            this.txtAño._validable = false;
-            this.txtAño.Location = new System.Drawing.Point(102, 54);
-            this.txtAño.Name = "txtAño";
-            this.txtAño.Size = new System.Drawing.Size(100, 20);
-            this.txtAño.TabIndex = 24;
             // 
             // label1
             // 
@@ -99,6 +88,17 @@ namespace TuLuzNet.Estadisticas.ProductosMasVendidosXAño
             this.btnBuscar.UseVisualStyleBackColor = true;
             this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
+            // txtAño
+            // 
+            this.txtAño._columna = null;
+            this.txtAño._mensajeError = null;
+            this.txtAño._repetible = false;
+            this.txtAño._validable = false;
+            this.txtAño.Location = new System.Drawing.Point(102, 54);
+            this.txtAño.Name = "txtAño";
+            this.txtAño.Size = new System.Drawing.Size(100, 20);
+            this.txtAño.TabIndex = 24;
+            // 
             // Frm_Stats_ProdMasVendidosXAño
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -122,9 +122,9 @@ namespace TuLuzNet.Estadisticas.ProductosMasVendidosXAño
 
         private Microsoft.Reporting.WinForms.ReportViewer rvProd;
         private System.Windows.Forms.Label label2;
-        private Clases.TextBox01 txtAño;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnBuscar;
+        private Clases.TextBox01 txtAño;
     }
 }

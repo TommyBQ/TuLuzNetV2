@@ -38,6 +38,12 @@ namespace TuLuzNet.Negocio
             return Ec;
         }
 
+        public DataTable RecuperarPedidosXMes()
+        {
+            string sql = "SELECT CASE MONTH(fechaPedido) WHEN 1 THEN 'Enero' WHEN 2 THEN 'Febrero' WHEN 3 THEN 'Marzo' WHEN 4 THEN 'Abril' WHEN 5 THEN 'Mayo' WHEN 6 THEN 'Junio' WHEN 7 THEN 'Julio' WHEN 8 THEN 'Agosto' WHEN 9 THEN 'Septiembre' WHEN 10 THEN 'Octubre' WHEN 11 THEN 'Noviembre' WHEN 12 THEN 'Diciembre'  END AS Mes, COUNT(MONTH(fechaPedido)) as cantidad FROM Pedidos WHERE YEAR(fechaPedido) = 2022 group by MONTH(fechaPedido)";
+            return _BD_Pedidos.EjecutarSQL(sql);
+        }
+
         public DataTable RecuperarPedidoEntrePrecio(string min, string max)
         {
             string sql = "SELECT P.numeroPedido, C.nombreCliente, C.apellidoCliente, C.cuitCliente, P.fechaPedido, P.numDniVendedor, P.condicionPago, DP.precio From Pedidos P JOIN Cliente C ON P.cuitCliente = C.cuitCliente JOIN DetallePedido DP ON DP.numeroPedido = P.numeroPedido WHERE DP.precio BETWEEN " + min + " AND " + max;

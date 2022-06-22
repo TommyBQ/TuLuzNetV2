@@ -237,6 +237,17 @@
     <Compile Include="Estadisticas\EmpleadosXActivo\Frm_Stat_EmpXAct.Designer.cs">
       <DependentUpon>Frm_Stat_EmpXAct.cs</DependentUpon>
     </Compile>
+    <Compile Include="Estadisticas\PedidosXMes\Frm_Stat_PedidosXMes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estadisticas\PedidosXMes\Frm_Stat_PedidosXMes.Designer.cs">
+      <DependentUpon>Frm_Stat_PedidosXMes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estadisticas\PedidosXMes\PedidosXMesDBS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PedidosXMesDBS.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Estadisticas\ProductosMasVendidosXAño\Frm_Stats_ProdMasVendidosXAño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -515,6 +526,10 @@
       <DependentUpon>Frm_Stat_EmpXAct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Estadisticas\EmpleadosXActivo\Stat_EmpXActivo.rdlc" />
+    <EmbeddedResource Include="Estadisticas\PedidosXMes\Frm_Stat_PedidosXMes.resx">
+      <DependentUpon>Frm_Stat_PedidosXMes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estadisticas\PedidosXMes\Stat_PedXMes.rdlc" />
     <EmbeddedResource Include="Estadisticas\ProductosMasVendidosXAño\Frm_Stats_ProdMasVendidosXAño.resx">
       <DependentUpon>Frm_Stats_ProdMasVendidosXAño.cs</DependentUpon>
     </EmbeddedResource>
@@ -606,6 +621,17 @@
     </None>
     <None Include="Estadisticas\EmpleadosXActivo\EmpleadosXActivoDBS.xss">
       <DependentUpon>EmpleadosXActivoDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\PedidosXMes\PedidosXMesDBS.xsc">
+      <DependentUpon>PedidosXMesDBS.xsd</DependentUpon>
+    </None>
+    <None Include="Estadisticas\PedidosXMes\PedidosXMesDBS.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PedidosXMesDBS.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Estadisticas\PedidosXMes\PedidosXMesDBS.xss">
+      <DependentUpon>PedidosXMesDBS.xsd</DependentUpon>
     </None>
     <None Include="Estadisticas\ProductosMasVendidosXAño\ProdMasVendidosXAñoDBS.xsc">
       <DependentUpon>ProdMasVendidosXAñoDBS.xsd</DependentUpon>
@@ -720,9 +746,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Estadisticas\PedidosXMes\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll" />

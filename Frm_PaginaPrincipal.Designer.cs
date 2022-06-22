@@ -51,7 +51,6 @@ namespace TuLuzNet
             this.btnCotizacionesXPrecio = new System.Windows.Forms.Button();
             this.btnPedidosEntrePrecios = new System.Windows.Forms.Button();
             this.btnPedidosXCliente = new System.Windows.Forms.Button();
-            this.btnEmpleadosXActStat = new System.Windows.Forms.Button();
             this.btnEmpleadoXActivo = new System.Windows.Forms.Button();
             this.btnPedidosXMes = new System.Windows.Forms.Button();
             this.btnStatsProdMasVendido = new System.Windows.Forms.Button();
@@ -283,18 +282,9 @@ namespace TuLuzNet
             this.btnPedidosXCliente.UseVisualStyleBackColor = true;
             this.btnPedidosXCliente.Click += new System.EventHandler(this.btnPedidosXCliente_Click);
             // 
-            // btnEmpleadosXActStat
-            // 
-            this.btnEmpleadosXActStat.Location = new System.Drawing.Point(350, 416);
-            this.btnEmpleadosXActStat.Name = "btnEmpleadosXActStat";
-            this.btnEmpleadosXActStat.Size = new System.Drawing.Size(131, 40);
-            this.btnEmpleadosXActStat.TabIndex = 33;
-            this.btnEmpleadosXActStat.Text = "Pedidos por Cliente";
-            this.btnEmpleadosXActStat.UseVisualStyleBackColor = true;
-            // 
             // btnEmpleadoXActivo
             // 
-            this.btnEmpleadoXActivo.Location = new System.Drawing.Point(486, 415);
+            this.btnEmpleadoXActivo.Location = new System.Drawing.Point(351, 415);
             this.btnEmpleadoXActivo.Name = "btnEmpleadoXActivo";
             this.btnEmpleadoXActivo.Size = new System.Drawing.Size(131, 40);
             this.btnEmpleadoXActivo.TabIndex = 32;
@@ -310,6 +300,7 @@ namespace TuLuzNet
             this.btnPedidosXMes.TabIndex = 31;
             this.btnPedidosXMes.Text = "Pedidos por Mes";
             this.btnPedidosXMes.UseVisualStyleBackColor = true;
+            this.btnPedidosXMes.Click += new System.EventHandler(this.btnPedidosXMes_Click);
             // 
             // btnStatsProdMasVendido
             // 
@@ -356,7 +347,6 @@ namespace TuLuzNet
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(627, 500);
-            this.Controls.Add(this.btnEmpleadosXActStat);
             this.Controls.Add(this.btnEmpleadoXActivo);
             this.Controls.Add(this.btnPedidosXMes);
             this.Controls.Add(this.btnStatsProdMasVendido);
@@ -418,7 +408,6 @@ namespace TuLuzNet
         private System.Windows.Forms.Button btnCotizacionesXPrecio;
         private System.Windows.Forms.Button btnPedidosEntrePrecios;
         private System.Windows.Forms.Button btnPedidosXCliente;
-        private System.Windows.Forms.Button btnEmpleadosXActStat;
         private System.Windows.Forms.Button btnEmpleadoXActivo;
         private System.Windows.Forms.Button btnPedidosXMes;
         private System.Windows.Forms.Button btnStatsProdMasVendido;

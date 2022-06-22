@@ -19,6 +19,7 @@ using TuLuzNet.Reportes.PedidosXCliente;
 using TuLuzNet.Reportes.PedidosEntrePrecio;
 using TuLuzNet.Estadisticas.ProductosMasVendidosXAño;
 using TuLuzNet.Estadisticas.EmpleadosXActivo;
+using TuLuzNet.Estadisticas.PedidosXMes;
 
 namespace TuLuzNet
 {
@@ -186,6 +187,12 @@ namespace TuLuzNet
         {
             Frm_Stat_EmpXAct frm_Stat_EmpXAct = new Frm_Stat_EmpXAct();
             frm_Stat_EmpXAct.Show();
+        }
+
+        private void btnPedidosXMes_Click(object sender, EventArgs e)
+        {
+            Frm_Stat_PedidosXMes frm_Stat_PedidosXMes = new Frm_Stat_PedidosXMes();
+            frm_Stat_PedidosXMes.Show();
         }
     }
 }
