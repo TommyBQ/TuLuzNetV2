@@ -326,6 +326,12 @@
     <Compile Include="Procedimientos\Factura\Frm_CargarFactura.Designer.cs">
       <DependentUpon>Frm_CargarFactura.cs</DependentUpon>
     </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_ModificarFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procedimientos\Factura\Frm_ModificarFactura.Designer.cs">
+      <DependentUpon>Frm_ModificarFactura.cs</DependentUpon>
+    </Compile>
     <Compile Include="Procedimientos\Pedidos\Frm_ABM_Pedidos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -560,6 +566,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Factura\Frm_CargarFactura.resx">
       <DependentUpon>Frm_CargarFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procedimientos\Factura\Frm_ModificarFactura.resx">
+      <DependentUpon>Frm_ModificarFactura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Procedimientos\Pedidos\Frm_ABM_Pedidos.resx">
       <DependentUpon>Frm_ABM_Pedidos.cs</DependentUpon>

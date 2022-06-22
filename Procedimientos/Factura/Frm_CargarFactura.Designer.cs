@@ -34,6 +34,7 @@ namespace TuLuzNet.Procedimientos.Factura
             this.lblNombre = new System.Windows.Forms.Label();
             this.lblBarrio = new System.Windows.Forms.Label();
             this.grBoxFiltros = new System.Windows.Forms.GroupBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.chkNoActivo = new TuLuzNet.Clases.CheckBox01();
             this.chkActivo = new TuLuzNet.Clases.CheckBox01();
             this.btnVolver = new System.Windows.Forms.Button();
@@ -80,6 +81,7 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             // grBoxFiltros
             // 
+            this.grBoxFiltros.Controls.Add(this.btnEditar);
             this.grBoxFiltros.Controls.Add(this.chkNoActivo);
             this.grBoxFiltros.Controls.Add(this.chkActivo);
             this.grBoxFiltros.Controls.Add(this.btnVolver);
@@ -93,10 +95,21 @@ namespace TuLuzNet.Procedimientos.Factura
             this.grBoxFiltros.Controls.Add(this.lblNombre);
             this.grBoxFiltros.Location = new System.Drawing.Point(10, 10);
             this.grBoxFiltros.Name = "grBoxFiltros";
-            this.grBoxFiltros.Size = new System.Drawing.Size(557, 378);
+            this.grBoxFiltros.Size = new System.Drawing.Size(627, 378);
             this.grBoxFiltros.TabIndex = 18;
             this.grBoxFiltros.TabStop = false;
             this.grBoxFiltros.Text = "Filtros";
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEditar.BackgroundImage")));
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnEditar.Location = new System.Drawing.Point(49, 335);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(39, 37);
+            this.btnEditar.TabIndex = 27;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // chkNoActivo
             // 
@@ -130,7 +143,7 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.btnVolver.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnVolver.BackgroundImage")));
             this.btnVolver.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnVolver.Location = new System.Drawing.Point(508, 335);
+            this.btnVolver.Location = new System.Drawing.Point(581, 335);
             this.btnVolver.Name = "btnVolver";
             this.btnVolver.Size = new System.Drawing.Size(39, 37);
             this.btnVolver.TabIndex = 22;
@@ -152,16 +165,17 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.btnBorrarLogico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnBorrarLogico.BackgroundImage")));
             this.btnBorrarLogico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnBorrarLogico.Location = new System.Drawing.Point(48, 335);
+            this.btnBorrarLogico.Location = new System.Drawing.Point(94, 335);
             this.btnBorrarLogico.Name = "btnBorrarLogico";
             this.btnBorrarLogico.Size = new System.Drawing.Size(39, 37);
             this.btnBorrarLogico.TabIndex = 21;
             this.btnBorrarLogico.UseVisualStyleBackColor = true;
+            this.btnBorrarLogico.Click += new System.EventHandler(this.btnBorrarLogico_Click);
             // 
             // btnBuscarTodos
             // 
             this.btnBuscarTodos.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnBuscarTodos.Location = new System.Drawing.Point(351, 79);
+            this.btnBuscarTodos.Location = new System.Drawing.Point(423, 79);
             this.btnBuscarTodos.Name = "btnBuscarTodos";
             this.btnBuscarTodos.Size = new System.Drawing.Size(108, 26);
             this.btnBuscarTodos.TabIndex = 19;
@@ -172,7 +186,7 @@ namespace TuLuzNet.Procedimientos.Factura
             // btnBuscar
             // 
             this.btnBuscar.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnBuscar.Location = new System.Drawing.Point(464, 79);
+            this.btnBuscar.Location = new System.Drawing.Point(537, 79);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(83, 26);
             this.btnBuscar.TabIndex = 18;
@@ -188,7 +202,7 @@ namespace TuLuzNet.Procedimientos.Factura
             this.dataGridViewFactura.Name = "dataGridViewFactura";
             this.dataGridViewFactura.RowHeadersVisible = false;
             this.dataGridViewFactura.RowTemplate.Height = 25;
-            this.dataGridViewFactura.Size = new System.Drawing.Size(542, 219);
+            this.dataGridViewFactura.Size = new System.Drawing.Size(615, 219);
             this.dataGridViewFactura.TabIndex = 17;
             this.dataGridViewFactura.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewFactura_CellContentClick);
             // 
@@ -207,7 +221,7 @@ namespace TuLuzNet.Procedimientos.Factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 399);
+            this.ClientSize = new System.Drawing.Size(643, 399);
             this.Controls.Add(this.grBoxFiltros);
             this.Controls.Add(this.textBox011);
             this.Name = "Frm_CargarFactura";
@@ -235,5 +249,6 @@ namespace TuLuzNet.Procedimientos.Factura
         private System.Windows.Forms.Button btnVolver;
         private Clases.CheckBox01 chkActivo;
         private Clases.CheckBox01 chkNoActivo;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
