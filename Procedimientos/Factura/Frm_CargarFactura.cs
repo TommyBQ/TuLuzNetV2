@@ -13,7 +13,7 @@ namespace TuLuzNet.Procedimientos.Factura
 {
     public partial class Frm_CargarFactura : Form
     {
-        Ne_Facturas facturas = new Ne_Facturas();
+        Ne_Facturas _NF = new Ne_Facturas();
         public Frm_CargarFactura()
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace TuLuzNet.Procedimientos.Factura
 
             if (txtNumFactura.Text != string.Empty)
             {
-                this.dataGridViewFactura.DataSource = facturas.RecuperarFacturasXNumFactura(int.Parse(txtNumFactura.Text));
+                this.dataGridViewFactura.DataSource = _NF.RecuperarFacturasXNumFactura(int.Parse(txtNumFactura.Text));
                 if (dataGridViewFactura.Rows.Count == 1)
                 {
                     MessageBox.Show("No se encontró ninguna factura", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -40,11 +40,11 @@ namespace TuLuzNet.Procedimientos.Factura
             }
             else if (chkActivo.Checked)
             {
-                this.dataGridViewFactura.DataSource = facturas.RecuperarFacturasXActivo(chkActivo.Checked);
+                this.dataGridViewFactura.DataSource = _NF.RecuperarFacturasXActivo(chkActivo.Checked);
             }
             else if (chkNoActivo.Checked)
             {
-                this.dataGridViewFactura.DataSource = facturas.RecuperarFacturasXActivo(chkNoActivo.Checked);
+                this.dataGridViewFactura.DataSource = _NF.RecuperarFacturasXActivo(chkNoActivo.Checked);
 
             }
             else
@@ -55,7 +55,7 @@ namespace TuLuzNet.Procedimientos.Factura
 
         private void btnBuscarTodos_Click(object sender, EventArgs e)
         {
-            this.dataGridViewFactura.DataSource = facturas.RecuperarFacturas();
+            this.dataGridViewFactura.DataSource = _NF.RecuperarFacturas();
 
         }
 
@@ -74,5 +74,32 @@ namespace TuLuzNet.Procedimientos.Factura
         {
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewFactura.Rows.Count == 1)
+            {
+                MessageBox.Show("La grilla está vacial", "Importante", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            Frm_ModificarFactura frmModificarFactura = new Frm_ModificarFactura();
+            if (dataGridViewFactura.CurrentRow != null)
+            {
+                frmModificarFactura._numero = dataGridViewFactura.CurrentRow.Cells[0].Value.ToString();
+                frmModificarFactura.Show();
+            }
+            else
+                MessageBox.Show("No se seleccionó NADA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+
+        private void btnBorrarLogico_Click(object sender, EventArgs e)
+        {
+            string numFactura = dataGridViewFactura.CurrentRow.Cells[0].Value.ToString();
+            if (MessageBox.Show("¿Está seguro de borrar esta Factura?", "Pregunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                _NF.Borrar(numFactura);
+            }
+        }
     }
-}
+    }
+
