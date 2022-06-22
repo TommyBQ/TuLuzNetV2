@@ -18,6 +18,7 @@ using TuLuzNet.Reportes.CotizacionesEntrePrecio;
 using TuLuzNet.Reportes.PedidosXCliente;
 using TuLuzNet.Reportes.PedidosEntrePrecio;
 using TuLuzNet.Estadisticas.ProductosMasVendidosXAño;
+using TuLuzNet.Estadisticas.EmpleadosXActivo;
 
 namespace TuLuzNet
 {
@@ -179,6 +180,12 @@ namespace TuLuzNet
             Hide();
             Frm_Stats_ProdMasVendidosXAño frm_Stats_ProdMasVendidosXAño = new Frm_Stats_ProdMasVendidosXAño();
             frm_Stats_ProdMasVendidosXAño.Show();
+        }
+
+        private void btnEmpleadoXActivo_Click(object sender, EventArgs e)
+        {
+            Frm_Stat_EmpXAct frm_Stat_EmpXAct = new Frm_Stat_EmpXAct();
+            frm_Stat_EmpXAct.Show();
         }
     }
 }

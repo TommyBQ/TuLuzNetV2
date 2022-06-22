@@ -25,6 +25,12 @@ namespace TuLuzNet.Negocio
         BD_acceso_a_datos _BD_empleados = new BD_acceso_a_datos();
         TratamientosEspeciales _TE = new TratamientosEspeciales();
 
+        public DataTable RecuperarCantEmpleadosActivos()
+        {
+            string sql = "SELECT activo, COUNT(*) as cantidad FROM [BD3K6G02_2022].[dbo].[Empleados] group by activo";
+            return _BD_empleados.EjecutarSQL(sql);
+        }
+
         public EstructuraCombo DatosCombo()
         {
             EstructuraCombo Ec = new EstructuraCombo();

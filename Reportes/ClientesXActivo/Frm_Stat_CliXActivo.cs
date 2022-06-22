@@ -22,7 +22,6 @@ namespace TuLuzNet.Reportes.ClientesXActivo
 
         private void Frm_Stat_CliXActivo_Load(object sender, EventArgs e)
         {
-
             this.rv_scxa.RefreshReport();
         }
 
